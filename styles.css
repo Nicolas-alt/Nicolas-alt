@@ -1,0 +1,36 @@
+body {
+  display: grid;
+}
+.container__pt {
+  background-color: blue;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  height: 800px;
+  width: 100%;
+}
+.proyectos {
+  background-color: yellow;
+  width: 50%;
+}
+.tecnologias {
+  background-color: red;
+  width: 50%;
+}
+.section__form--style {
+  display: flex;
+  align-items: center;
+  height: 800px;
+  justify-content: center;
+  flex-direction: column;
+}
+.fieldset {
+  border: none;
+}
+.footer__author {
+  display: grid;
+  justify-content: center;
+}
+.img__logo {
+  height: 120px;
+  width: 120px;
+}
