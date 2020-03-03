@@ -3,27 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald|Spartan&display=swap" rel="stylesheet">
+    <meta name="description" content="Nicolas Jiménez, desarrollador web Bogotá.">
     <title>Desarrollador Web</title>
 </head>
 <body>
 
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#">Nicolas Jiménez</a></li>
-                <li><a href="#">Sobre mi</a></li>
-                <li><a href="#">Portafolio</a></li>
-                <li><a href="#">Servicios</a></li>
-                <li><a href="#">Idioma</a></li>
+    <header class="header__menu">
+        <nav class="nav__menu">
+            <ul class="ul__menu">
+                <li class="li__menu"><a class="link__menu" href="#">Idioma</a></li>
+                <li class="li__menu"><a class="link__menu" href="#">Servicios</a></li>
+                <li class="li__menu"><a class="link__menu" href="#">Portafolio</a></li>
+                <li class="li__menu"><a class="link__menu" href="#">Sobre mi</a></li>
             </ul>
         </nav>
     </header>
   
     <!--Sobre mi-->
     <div>
-        <h1>Sobre mi</h1>
-        <main>
+        <main class="main__container">
+            <h1>Sobre mi</h1>
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum quas facilis autem quaerat, 
                 magni illo minus ut aut possimus neque, 
@@ -36,32 +38,22 @@
         </div>
     </div>
     
-    <!--Habilidades-->
-    <section>
-        <h2>Habilidades</h2>
-        <div>1</div>
-        <div>2</div>
-        <div>3</div>
-        <div>4</div>
+   <!--Tecnologias que uso-->
+   <section class="tecnologias">
+        <h2>Teconologias</h2>
+  
     </section>
+
     <!--Proyectos-->
     <div class="container__pt">
-        <h2>Proyectos realizados</h2>
         <!--Proyectos que he realizado-->
         <section class="proyectos">
+            <h2>Proyectos realizados</h2>
 
-        </section>
-
-        <!--Tecnologias que uso-->
-        <section class="tecnologias">
-            <h3>Teconologias</h3>
-            <aside></aside>
-            <aside></aside>
-            <aside></aside>
-            <aside></aside>
-        </section>
+        </section>    
     </div>
-    <!--Formulario página-->
+    <!--Formulario página lo usaré en el futuro.
+
     <section class="section__form--style">
         <form action="">
            <fieldset class="fieldset">
@@ -72,16 +64,17 @@
             </fieldset>
         </form>
     </section>
-
-    <!--Footer págna-->
+    -->
+<!--Footer págna-->
     <footer itemscope itemtype="https://schema.org/Person"  class="footer__author">
         <div>
             <a href="https://github.com/Nicolas-alt" target="_blank"><img class="img__logo" src="https://i.ibb.co/TgGhsFL/Git-Hub-Mark-120px-plus.png" alt="Git-Hub-Mark-120px-plus"></a> 
             <a href="" target="_blank"><img class="img__logo" src="https://i.ibb.co/rM9wmcD/twitter.png" alt="Twitter logo"></a>
-            <img  src="" alt="">
         </div>
         <p >Derechos reservados <span itemprop="name">Nicolas Jiménez</span>  2020</p>
     </footer>
+
+<!--Scrips de la página.-->
     <script src="./Js/script.js"></script>
 </body>
 </html>

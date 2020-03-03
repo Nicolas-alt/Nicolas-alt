@@ -1,1 +1,42 @@
-//Barra de navegación
+//Barra de navegación   
+
+.header__menu{
+    display: flex;
+    height: @header-size;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    
+    background-color: @menta-prendido;
+}
+.nav__menu{
+ 
+    width: 100%; 
+       
+}
+.ul__menu{
+    
+    display: flex;
+    flex-direction: row-reverse;
+
+}
+
+
+.li__menu{
+    list-style: none;
+    margin-right: 6%;
+    padding: @paddin-item;  
+}
+
+.li__menu:hover{
+
+    border-bottom: 3px solid @detalles;
+}
+
+//Etiquetas <a>
+.link__menu{
+    text-decoration: none;
+    font-size: 1.3em;
+    font-family: 'Oswald', sans-serif;
+    color: @menu-titulo;
+}
