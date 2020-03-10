@@ -36,57 +36,75 @@ body{
 
 .container__proyectos{
     background-color: royalblue;
-    display: grid;
-    grid-template-columns: 50px repeat(3,fr) 50px;
-    grid-template-rows: 60px 1fr 50px;
-    grid-template-areas: ". title title title ."
-                         ". item1 item2 item3 . "
-                         ".  .     .     .    .";
-    grid-column-gap: 10px;
-    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: @height-container;
     width: 100%
 }
 .h2__proyectos{
-    grid-area: title;
+    font-size: 2rem;
 }
 
-.proyectos__item--1{
-    grid-area: item1;
-    place-self: center;
-    background-color: red;
-    height: 100%;
-    width: 100%;
+.ul__list--proyects{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+    width: auto;
+    
 }
-.proyectos__item--2{
-    grid-area: item2;
-    place-self: center;
-    background-color: red;
-    height: 100%;
-    width: 100%;
+.div__container--li{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: purple;
+    height: @height-container;
+    width: 50%;
 }
-.proyectos__item--3{
-    grid-area: item3;
-    background-color: red;
-    height: 100%;
-    width: 100%;
-    place-self: center;
+[class^="li__proyect--"]{
+    margin: 10px;
+    height: 400px;
+    width: 200px;
+    background-color: yellow;
 }
-
-//===============================Tecnologias========================================
+//=========================Tecnologias========================================
 .section__tecnology{
     display: flex;
-    align-items: center;
     justify-content: center;
-    background-color: green;
+    align-items: center;
+    background-color: @container-tecnologia;
     height: 200px;
     width: 100%;
 }
-.div__tecno{
+
+.ul__list--tecnology{
+    list-style: none;
+    display: flex;
+}
+[class*="li__tecno"]{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
     margin: 0 30px;
-    background-color: wheat;
-    height: 100px;
+    background-color: transparent;
+    border: 0.5px solid #CCD1D1;
+    border-radius: 5px;
+    height: 150px;
     width: 100px;
 }
+
+[class^="li__tecno--"]:hover{
+    background-color: white;
+    transition: .2s;
+    box-shadow: -9px 10px 9px -8px rgba(0,0,0,0.35);
+}
+
+
+
+
 //=============================== Imagenes de la página ==========================
 img{
     margin: 0 20px;
