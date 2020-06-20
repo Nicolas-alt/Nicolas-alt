@@ -1,0 +1,99 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  min-width: 250px;
+  font-family: 'Spartan', sans-serif;
+}
+
+.main--Content
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%
+}
+
+/*This will delete when i fix my chaos*/
+.img--Meme
+{
+    min-width: 200px;
+    min-height: 400px;
+    max-width: 50%;
+    max-height: 70%;
+}
+
+.div--LinkPagesContainer
+{
+    padding: 0 20%;
+    height: 50px;
+}
+
+.i--MediaIcons
+{
+    margin-left: 40px;
+    font-size: 35px;
+    color: white;
+}
+.footer--authorInformation
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    background-color: black;
+}
+
+.footer--authorInformation p
+{
+    border-top: 2px solid #ffffff;
+    color: white;
+    height: 50px;
+    padding-top: 10px;
+    width: auto;
+    margin: 0;
+}
+
+@media screen and (max-width: 450px)
+{
+    html,body
+    {
+        min-height: 10vh;
+        min-width: 250px;
+    }
+    .div--LinkPagesContainer
+{
+    padding: 0 20%;
+    height: 50px;
+}
+
+.i--MediaIcons
+{
+    margin-left: 10px;
+    font-size: 30px;
+    color: white;
+}
+.footer--authorInformation
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    background-color: black;
+}
+
+.footer--authorInformation p
+{
+    border-top: 2px solid #ffffff;
+    color: white;
+    height: 50px;
+    padding-top: 10px;
+    width: 200px;
+    font-size: 12px;
+    margin: 0;
+}
+}
