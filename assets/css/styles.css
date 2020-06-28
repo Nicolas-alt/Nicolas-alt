@@ -1,3 +1,5 @@
+*{box-sizing: border-box;}
+
 html, body {
   height: 100%;
   width: 100%;
@@ -5,43 +7,191 @@ html, body {
   padding: 0;
   min-width: 250px;
   font-family: 'Spartan', sans-serif;
+  position: relative;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+  height: 15px;
+}
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+::-webkit-scrollbar-thumb {
+  background: #0ac9cd;
+  border: 0px none #ffffff;
+  border-radius: 50px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ffffff;
+}
+::-webkit-scrollbar-thumb:active {
+  background: #00abf6;
+}
+::-webkit-scrollbar-track {
+  background: #cbf1fb;
+  border: 0px none #ffffff;
+  border-radius: 50px;
+}
+::-webkit-scrollbar-track:hover {
+  background: #1fc3f9;
+}
+::-webkit-scrollbar-track:active {
+  background: #a3dcff;
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+header
+{
+    width: 100%;
+    height: 80px;
+}
+
+nav,
+ul
+{   
+    
+    height: 100%;
+    width: 100%;
+}
+
+/*Estilos boton hamburger*/
+.div--menu-btn {
+    display: none;
+    cursor: pointer;
+    margin: 1em;
+    width: 36px;
+}
+  /*=*/
+.div--menu-btn:before,
+.div--menu-btn:after {
+    background-color: #fff;
+    content: "";
+    display: block;
+    height: 4px;
+    transition: all 200ms ease-in-out;
+}
+.div--menu-btn:before {
+   box-shadow: 0 10px 0 #fff;
+   margin-bottom: 16px;
+}
+/*x*/
+.div--menu-btn--x:before {
+    box-shadow: 0 0 0 #fff;
+   transform: translateY(10px) rotate(45deg);
+}
+.div--menu-btn--x:after {
+    transform: translateY(-10px) rotate(-45deg);
+}
+
+.p--log
+    {
+        display: none;
+    }
+
+
+ul
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: 0;
+}
+
+.li--item
+{
+    margin-left: 50px;
+    list-style: none;
+}
+
+.a--item
+{
+    font-weight: 700;
+    color: #000000;
+    opacity: 0.35;
+    text-decoration: none;
+}
+
+.circle
+{
+    position: absolute;
+    z-index: -1;
+    left: 87%;
+    border-radius: 50%;
+    background: transparent linear-gradient(212deg, #FFFFFF 0%, #E4F6FE 24%, #A1E0FC 59%, #00ABF6 100%) 0% 0% no-repeat padding-box;
+    height: 800px;
+    width: 800px;
 }
 
 .main--Content
 {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100%;
     width: 100%
 }
 
-/*This will delete when i fix my chaos*/
-.img--Meme
+.main--Content h1
 {
-    min-width: 200px;
-    min-height: 400px;
-    max-width: 50%;
-    max-height: 70%;
+    color: #3ABEF8;
 }
 
-.div--LinkPagesContainer
+.main--Content p
 {
-    padding: 0 20%;
-    height: 50px;
+    color: #000000;
+    opacity: 0.6;
 }
 
-.i--MediaIcons
+h1
 {
-    margin-left: 40px;
-    font-size: 35px;
-    color: white;
+    font-size: 60px;
+}
+
+.span--h1Content
+{
+    margin-bottom: 20px;
+}
+
+.div--localitation
+{
+    display: flex;
+    align-items: center;
+    height: 60px;
+    width: 150px;
+}
+
+.img--main
+{
+    margin-right: 20px;
+    width: 50px;
+    height: 33px;
+}
+
+.main--Content .i--MediaIconsMain
+{
+    color: #E0E0E0;
+}
+
+.div--mediaContact
+{
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
 }
 .footer--authorInformation
 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    padding-top: 10px;
     height: 100px;
     width: 100%;
     background-color: black;
@@ -57,12 +207,120 @@ html, body {
     margin: 0;
 }
 
+.div--LinkPagesContainer
+{
+    padding: 0 20%;
+    height: 50px;
+}
+
+.i--MediaIcons
+{
+    margin-left: 40px;
+    font-size: 35px;
+    color: white;
+}
+
+@media screen and (max-width: 700px)
+{
+
+    ::-webkit-scrollbar {
+        width: 1px;
+        height: 1px;
+    }
+    .div--menu-btn {
+        display: block;
+    }
+    nav, ul
+    {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+
+    nav
+    {
+        padding-right: 20px;
+        justify-content: space-between;
+        border-bottom: 1px solid #fff;
+    }
+
+    ul
+    {
+        display: none;
+    }
+    .ul--container--visible
+    {
+        display: block;
+        position: absolute;
+        top: 20%;
+        right: 5%;
+        width: 50%;
+        height: 200px;
+    }
+
+    .li--item
+    {
+        margin-bottom: 20px;
+        width: 50%;
+    }
+
+    .a--item
+    {
+        color: white;
+        opacity: 1;
+    }
+    .p--log
+    {
+        color: white;
+        padding-left: 20px;
+        display: block;
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    .p--log--none
+
+    {
+    display: none;
+    }
+
+    .circle 
+    {
+    position: absolute;
+    z-index: -1;
+    right: 50px;
+    left: 242px;
+    bottom: 57%;
+    background: transparent linear-gradient(212deg, #FFFFFF 0%, #E4F6FE 24%, #A1E0FC 59%, #00ABF6 100%) 0% 0% no-repeat padding-box;
+    height: 500px;
+    width: 800px;
+    }
+
+    .circle--down
+    {
+        left: -44px;
+        right: 20%;
+        bottom: 50%;
+    }
+
+}
 @media screen and (max-width: 450px)
 {
     html,body
     {
         min-height: 10vh;
         min-width: 250px;
+    }
+
+    h1
+    {
+        text-align: center;
+        font-size: 30px;
+    }
+
+    p
+    {
+        text-align: center;
     }
     .div--LinkPagesContainer
 {
