@@ -7,11 +7,11 @@ import { ArticulosComponent } from './components/articulos/articulos.component';
 import { HomeComponent } from './components/home/home.component';
 
 const routes: Routes = [
-  {path: '**', component: Page404Component},
   {path: 'experiencia', component: ExperienciaComponent},
   {path: 'skills', component: SkillsComponent},
   {path: 'articulos', component: ArticulosComponent},
-  {path: '', component: HomeComponent}
+  {path: '', component: HomeComponent},
+  {path: '**', component: Page404Component}
 ];
 
 @NgModule({
