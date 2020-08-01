@@ -6,7 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./experiencia.component.sass']
 })
 export class ExperienciaComponent implements OnInit {
-
+    goToLink(url: string){
+      window.open(url, "_blank");
+    }
   constructor() { }
 
   ngOnInit(): void {
