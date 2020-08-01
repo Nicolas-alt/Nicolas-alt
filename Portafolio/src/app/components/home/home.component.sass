@@ -50,3 +50,46 @@ p
     grid-column-start: 1
     grid-column-end: 3
     place-self: center center
+
+  
+@media screen and (max-width: 1200px)
+    h1
+        font-size: 3.5em
+
+    .span-h1Content
+        margin-left: 150px
+
+
+
+@media screen and (max-width: 650px)
+    .section--container
+        flex-direction: column
+        align-items: center
+
+
+    .div--mainContent
+        display: flex
+        flex-direction: column
+        width: 100%
+
+    h1
+        font-size: 3em
+        padding-top: 50px
+        margin-bottom: 20px
+        width: 100% 
+        display: flex
+        flex-direction: column
+        align-items: center
+
+    .span-h1Content
+        margin-left: 5px
+
+    p
+        width: 100%
+        font-size: 1.4em
+        text-align: center 
+
+@media screen and (max-width: 850px)
+    p
+        padding:   0   25px
+        font-size: 1.3em 
