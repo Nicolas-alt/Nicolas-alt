@@ -109,6 +109,7 @@
     <img src="https://devicons.github.io/devicon/devicon.git/icons/sass/sass-original.svg" alt="sass" width="40" height="40"/>
    </a> 
 </p>
+<hr />
 <br />
 <br />
 
