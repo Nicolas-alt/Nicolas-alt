@@ -18,7 +18,9 @@ import { NavBarComponent } from './components/nav-bar/nav-bar.component';
     SkillsComponent,
     Page404Component,
     ExperienciaComponent,
-    NavBarComponent,
+    NavBarComponent
+  ],
+  imports: [
     BrowserModule,
     AppRoutingModule
   ],
