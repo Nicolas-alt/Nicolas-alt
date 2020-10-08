@@ -4,31 +4,60 @@
     display: grid;
     grid-template-columns: 1fr 0.7fr;
     grid-template-areas: "img text";
-    padding-top: 60px;
     width: 100%;
 }
 
 .div--img {
+    position: relative;
     height: 100%;
     width: 100%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 
     h1 { 
-        font-size: 3rem;
-        color: #FFD95E;
+        position: absolute;
+        left: 10%;
+        font-size: 4rem;
+        color: #F2C06B;
+        font-family: 'Heebo', sans-serif;
+        font-weight: 800;
     }
+
+    h1::before {
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 2px;
+        height: 5px;
+        width: 3.2em;
+        background-color: #F2C06B;
+    }
+
 
     .img--main {
         height: 70vh;
         width: 50vw;
-        grid-column-start: span 2;
         grid-area: img;
         
     }
+
+    .div--social {
+        i {
+            color: white;
+        }
+    }
 }
 
+
+.div--text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 
 p {
     font-size: 1rem;
