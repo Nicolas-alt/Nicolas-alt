@@ -1,6 +1,6 @@
 .section--container {
     height: 100vh;
-    background-color: #232240;
+    background-color: #6A67BF;
     display: grid;
     grid-template-columns: 1fr 0.7fr;
     grid-template-areas: "img text";
@@ -11,18 +11,19 @@
 .div--img {
     height: 100%;
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
 
     h1 { 
         font-size: 3rem;
         color: #FFD95E;
     }
+
     .img--main {
         height: 70vh;
         width: 50vw;
+        grid-column-start: span 2;
         grid-area: img;
         
     }
