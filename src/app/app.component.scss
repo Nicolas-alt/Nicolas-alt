@@ -8,4 +8,7 @@ html,body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    background: linear-gradient(-45deg, rgba(234,141,141,1) 0%, 
+      rgba(106,103,191,1) 80%,
+      rgba(106,103,191,1) 100%);
 }
