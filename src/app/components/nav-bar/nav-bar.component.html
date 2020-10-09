@@ -1,19 +1,34 @@
-<nav class=" ">
-    <a class=""  [routerLink]="['/']">
-      <img src="https://cdn.iconscout.com/icon/free/png-256/code-336-830581.png" 
-           class="d-inline-block align-top" alt="Logo Página" loading="lazy"
+<nav class="nav--conteiner">
+    <!-- <a class="a--navImg"  [routerLink]="['/']">
+      <img src="https://cdn.iconscout.com/icon/free/png-256/code-336-830581.png"
+           class="img--logo"
+           alt="Logo Página" 
+           loading="lazy"
            width="25" 
            height="25" />
-           Nicolas Jiménez
-    </a>
-    <div class="" id="">
-        <ul class="">
-          <li class="">
-            <a class="" [routerLink]="['/experiencia']" routerLinkActive="active">Experiencia</a>
-          </li>
-          <li class="">
-            <a class="" routerLinkActive="active" [routerLink]="['/skills']">Skills</a>
-          </li>
-        </ul>
-     </div>
+    </a> -->
+    <ul class="ul--container">
+      <li class="li--item">
+        <a class="a--navMenu" 
+            [routerLink]="['/']" 
+            routerLinkActive="a--navMenu--active">
+            Home
+        </a>
+      </li>
+      <li class="li--item">
+        <a class="a--navMenu" 
+            [routerLink]="['/experiencia']" 
+            routerLinkActive="a--navMenu--active">
+            Experiencia
+        </a>
+      </li>
+      
+      <li class="li--item">
+        <a class="a--navMenu" 
+            routerLinkActive="a--navMenu--active" 
+            [routerLink]="['/skills']">
+            Skills
+        </a>
+      </li>
+    </ul>
 </nav>

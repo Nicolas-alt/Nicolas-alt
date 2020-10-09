@@ -1,4 +1,33 @@
 nav { 
-    position: fixed;
-    z-index: 10;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.ul--container {
+    margin: 0;
+    display: flex;
+    list-style: none;
+}
+
+.li--item {
+    margin-left: 20px;
+
+    .a--navMenu {
+        font-size: 1.5em;
+        font-weight: 800;
+        color: white;
+    }
+
+    .a--navMenu--active::after {
+        content: "";
+        background-color: white;
+        border-radius: 100%;
+        margin: 0 auto;
+        display: block;
+        height: 10px;
+        width: 10px;
+    }
 }
