@@ -1,5 +1,9 @@
 @import "../node_modules/animate.css/animate.min.css"; 
 
+html {
+  scroll-behavior: smooth;
+}
+
 ::-webkit-scrollbar {
   width: 6px;
   height: 6px;
