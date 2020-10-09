@@ -22,13 +22,24 @@
 }
 
 .div--text {
+    position: relative;
+    width: 100%;
+    height: 100%;
     display: flex;
     padding-right: 40px;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    
-    h1 { 
+
+    .div--appNavBar
+    {
+        position: absolute;
+        top: 0;
+        padding-right: 50px;
+        width: 100%;
+    }    
+
+   h1 { 
         position: relative;
         font-size: 4rem;
         color: #F2C06B;
@@ -69,7 +80,7 @@
     a {
         color: white;
         font-size: 1.3em;
-
+        font-weight: 700;
         img {
             height: 1em;       
         }
