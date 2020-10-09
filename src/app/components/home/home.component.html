@@ -1,43 +1,37 @@
 <section class="section--container">
-    <div class="div--img ">
-        <div id="carouselExampleInterval" class="carousel slide div--main animate__animated animate__zoomIn" data-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active" data-interval="8000">
-                <img src="../../../assets/svg/1.svg" class="d-block w-100" alt="Imagen carrusel 1">
-              </div>
-              <div class="carousel-item" data-interval="8000">
-                <img src="../../../assets/svg/13.svg" class="d-block w-100" alt="Imagen carrusel 2">
-              </div>
-              <div class="carousel-item" data-interval="8000">
-                <img src="../../../assets/svg/12.svg" class="d-block w-100" alt="Imagen carrusel 3">
-              </div>
-            </div>
-        </div>
-    </div>
+  <div class="div--img ">
+    <img  class="img--main" src="../../../assets/svg/2.svg" alt="Imagen editor texto.">
+  </div>
 
 <div class="div--text">    
     <h1 class="">Nicolas <br /><span> Jiménez</span></h1>
       <div class="div--social"  
            [ngsRevealSet]="{ reset:true }" 
            [ngsInterval]="300" 
-           [ngsSelector]="'.a--social'" >
+           [ngsSelector]="'.a--social'">
         <a class="a--social" href="https://github.com/Nicolas-alt" target="_blank"> <i class='bx bxl-github'></i></a>
         <a class="a--social" href="https://www.linkedin.com/in/nicolas-jimenez-b20660184/" target="_blank"> <i class='bx bxl-linkedin' ></i></a>
         <a class="a--social" href="https://twitter.com/Nicolas35103573" target="_blank"> <i class='bx bxl-twitter' ></i></a>
         <a class="a--social" href="https://gitlab.com/Nicolas-alt" target="_blank"> <i class='bx bxl-gitlab'></i></a>
       </div>
-      <p class="p--principal"
-        [ngsRevealSet]="{ reset:true }" 
-        [ngsInterval]="1000" 
-        [ngsSelector]="'.p--principal'"> 
-          Desarrollador front-end, estudiante en una tecnología en
-          desarrollo de software, apasionado por el desarrollo web.
-      </p>
-      <a  class="div--social" [routerLink]="['/experiencia']" > Mis proyectos 
+      <a  class="div--social a--projects" [routerLink]="['/experiencia']" > Mis proyectos 
         <img src="../../../assets/svg/icon-angle-right.svg" alt="Arrow icon"> 
       </a>
 </div>
 </section>
 
+   <!-- <p class="p--principal"
+        [ngsRevealSet]="{ reset:true }" 
+        [ngsInterval]="1000" 
+        [ngsSelector]="'.p--principal'"> 
+          Desarrollador front-end, estudiante en una tecnología en
+          desarrollo de software, apasionado por el desarrollo web.
+      </p> -->
+      <!-- 
 <section class="section--secundary">
-</section>
+  <div id="typed-strings">
+    <p>Typed.js is an <strong>Awesome</strong> library.</p>
+    <p>It <em>types</em> out sentences.</p>
+</div>
+<span id="typed"></span>
+</section> -->
