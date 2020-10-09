@@ -16,20 +16,28 @@
     </div>
 
 <div class="div--text">    
-    <h1 class="animate__animated animate__slideInDown">Nicolas <br /><span> Jiménez</span></h1>
-      <div class="div--social animate__animated animate__slideInDown">
-        <a href="https://github.com/Nicolas-alt" target="_blank"> <i class='bx bxl-github'></i></a>
-        <a href="https://www.linkedin.com/in/nicolas-jimenez-b20660184/" target="_blank"> <i class='bx bxl-linkedin' ></i></a>
-        <a href="https://twitter.com/Nicolas35103573" target="_blank"> <i class='bx bxl-twitter' ></i></a>
-        <a href="https://gitlab.com/Nicolas-alt" target="_blank"> <i class='bx bxl-gitlab'></i></a>
+    <h1 class="">Nicolas <br /><span> Jiménez</span></h1>
+      <div class="div--social"  
+           [ngsRevealSet]="{ reset:true }" 
+           [ngsInterval]="300" 
+           [ngsSelector]="'.a--social'" >
+        <a class="a--social" href="https://github.com/Nicolas-alt" target="_blank"> <i class='bx bxl-github'></i></a>
+        <a class="a--social" href="https://www.linkedin.com/in/nicolas-jimenez-b20660184/" target="_blank"> <i class='bx bxl-linkedin' ></i></a>
+        <a class="a--social" href="https://twitter.com/Nicolas35103573" target="_blank"> <i class='bx bxl-twitter' ></i></a>
+        <a class="a--social" href="https://gitlab.com/Nicolas-alt" target="_blank"> <i class='bx bxl-gitlab'></i></a>
       </div>
-      <p class="animate__animated animate__slideInDown"> 
-        Desarrollador front-end, estudiante en una tecnología en
-        desarrollo de software, apasionado por el desarrollo web.
+      <p class="p--principal"
+        [ngsRevealSet]="{ reset:true }" 
+        [ngsInterval]="1000" 
+        [ngsSelector]="'.p--principal'"> 
+          Desarrollador front-end, estudiante en una tecnología en
+          desarrollo de software, apasionado por el desarrollo web.
       </p>
-      <a  class="div--social animate__animated animate__slideInDown" [routerLink]="['/experiencia']" > Mis proyectos 
+      <a  class="div--social" [routerLink]="['/experiencia']" > Mis proyectos 
         <img src="../../../assets/svg/icon-angle-right.svg" alt="Arrow icon"> 
       </a>
-
 </div>
+</section>
+
+<section class="section--secundary">
 </section>
