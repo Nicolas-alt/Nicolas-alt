@@ -1,4 +1,4 @@
-<section class="section--container">
+<section class="section--container" id=primary>
   <div class="div--img ">
     <div class="div--typedStrings">
       <div id="typed-strings">
@@ -6,7 +6,7 @@
           <span class="span--blue">import</span> 
           <span class="span--white">Greeting</span>
           <span class="span--blue">from</span>
-          <span class="span--green">'nicolas.hi';</span>
+          <span class="span--green">'Nicolas.hi';</span>
         </p>
         <p>
           <span id="typed"></span>
@@ -21,6 +21,7 @@
     <app-nav-bar></app-nav-bar>
   </div>
     <h1 class="animate__animated  animate__fadeInUp">Nicolas <br /><span> Jiménez</span></h1>
+      <p class="p--intro">- <span  class="span--intro" id=dev></span></p>
       <div class="div--social"  
            [ngsRevealSet]="{ reset:true }" 
            [ngsInterval]="300" 
@@ -36,13 +37,20 @@
 </div>
 </section>
 
-   <!-- <p class="p--principal"
+<section class="section--secundary" id="secundary">
+  <h2>Un poco sobre mi...</h2>
+  <p class="p--principal"
         [ngsRevealSet]="{ reset:true }" 
         [ngsInterval]="1000" 
         [ngsSelector]="'.p--principal'"> 
           Desarrollador front-end, estudiante en una tecnología en
           desarrollo de software, apasionado por el desarrollo web.
-      </p> -->
-<section class="section--secundary">
-  <h2>Sobre mi:</h2>
+   </p>
+
+   <h3>¿Qué hago?</h3>
+
+      <a class="a--rocket" href="#primary">
+        <img class="img--rocket" src="../../../assets/svg/5.svg" alt="To top">
+      </a>
+      <app-footer></app-footer>
 </section> 

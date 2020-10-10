@@ -20,9 +20,9 @@ export class HomeComponent implements OnInit {
       =>
        { <br />
        <span style="color: #8E44AD"> return </span> (
-       <span style="color: #C0392B">  < h1> </span>
-       <span style="color: white">   Hi there!! </span>
-       <span style="color: #C0392B"> < /h1> </span>
+       <span style="color: #C0392B">  < p> </span>
+       <span style="color: white">   Hi there </span>
+       <span style="color: #C0392B"> < /p> </span>
          ); <br />
        }
     `],
@@ -32,6 +32,19 @@ export class HomeComponent implements OnInit {
       backSpeed: 50,
       startDelay: 1000
   });
-  }
 
+  let dev = new Typed("#dev",{
+    strings: [
+      "Front dev 🎨",
+      "Desarrollador 🧩",
+      "Entusiasta 🤩",
+      "Developer 👾",
+      "Web Developer 💻" 
+  ],
+    loop: true,
+    typeSpeed: 80,
+    backSpeed: 80
+  });
+
+  }
 }
