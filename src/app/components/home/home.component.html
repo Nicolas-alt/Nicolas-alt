@@ -1,13 +1,26 @@
 <section class="section--container">
   <div class="div--img ">
-    <img  class="img--main" src="../../../assets/svg/2.svg" alt="Imagen editor texto.">
+    <div class="div--typedStrings">
+      <div id="typed-strings">
+        <p>
+          <span class="span--blue">import</span> 
+          <span class="span--white">Greeting</span>
+          <span class="span--blue">from</span>
+          <span class="span--green">'nicolas.hi';</span>
+        </p>
+        <p>
+          <span id="typed"></span>
+        </p>
+      </div>
+    </div>
+    <img  class="img--main" src="../../../assets/svg/2.svg" alt="Imagen editor texto." />
   </div>
 
 <div class="div--text">    
   <div class="div--appNavBar">
     <app-nav-bar></app-nav-bar>
   </div>
-    <h1 class="">Nicolas <br /><span> Jiménez</span></h1>
+    <h1 class="animate__animated  animate__fadeInUp">Nicolas <br /><span> Jiménez</span></h1>
       <div class="div--social"  
            [ngsRevealSet]="{ reset:true }" 
            [ngsInterval]="300" 
@@ -30,11 +43,6 @@
           Desarrollador front-end, estudiante en una tecnología en
           desarrollo de software, apasionado por el desarrollo web.
       </p> -->
-      <!-- 
 <section class="section--secundary">
-  <div id="typed-strings">
-    <p>Typed.js is an <strong>Awesome</strong> library.</p>
-    <p>It <em>types</em> out sentences.</p>
-</div>
-<span id="typed"></span>
-</section> -->
+  <h2>Sobre mi:</h2>
+</section> 
