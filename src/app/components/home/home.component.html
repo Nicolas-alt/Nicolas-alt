@@ -2,7 +2,7 @@
   <div class="div--img ">
     <div class="div--typedStrings">
       <div id="typed-strings">
-        <p>
+        <p class="p--code">
           <span class="span--blue">import</span> 
           <span class="span--white">Greeting</span>
           <span class="span--blue">from</span>
@@ -38,19 +38,33 @@
 </section>
 
 <section class="section--secundary" id="secundary">
-  <h2>Un poco sobre mi...</h2>
-  <p class="p--principal"
-        [ngsRevealSet]="{ reset:true }" 
-        [ngsInterval]="1000" 
-        [ngsSelector]="'.p--principal'"> 
-          Desarrollador front-end, estudiante en una tecnología en
-          desarrollo de software, apasionado por el desarrollo web.
-   </p>
+  <div class="div--gridContainer">
 
-   <h3>¿Qué hago?</h3>
+      <div class="div--info Card">
+        <div class="div--cardContainer">
+            <div class="div--cardColor"></div>
+            <div class="div--cardText">
+              <img class="img--card" src="../../../assets/img/picture.jpg" alt="Profile picture" />
+              <h2>Nicolas Jiménez</h2>
+              <p>Desarrollador front-end, estudiante en una tecnología en
+                desarrollo de software, apasionado por el desarrollo web.
+              </p>
+              <div class="div--media">
 
-      <a class="a--rocket" href="#primary">
-        <img class="img--rocket" src="../../../assets/svg/5.svg" alt="To top">
-      </a>
-      <app-footer></app-footer>
+              </div>
+            </div> 
+        </div>
+      </div>
+
+        <div class="Card div--cardItem div--cardItem1">1</div>
+        <div class="Card div--cardItem div--cardItem2">2</div>
+        <div class="Card div--cardItem div--cardItem3">3</div>  
+  </div>
+
+  <a class="a--rocket" href="#primary">
+    <img class="img--rocket" src="../../../assets/svg/5.svg" alt="To top">
+  </a>
+  <div class="div--footer">
+    <app-footer></app-footer>
+  </div>
 </section> 

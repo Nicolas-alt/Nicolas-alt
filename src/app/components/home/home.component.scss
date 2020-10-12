@@ -98,7 +98,7 @@
         display: flex;
 
         .span--intro {
-            color: #F9E061;
+            color: #F2C06B;
             font-size: 1.2em;
             font-family: inherit;
         }
@@ -147,9 +147,92 @@
 .section--secundary {
     position: relative;
     display: grid;
+    padding-top: 30px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows:  3fr 0.5fr;
+    grid-template-areas: "card card card  "
+                         "foot foot foot";
     height: 100vh;
     width: 100%;
 
+    .div--gridContainer {
+        padding: 0 30px;
+        margin-bottom: 30px;
+        display: grid;
+        grid-area: card;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 10px;
+        grid-template-areas: "card    card     cuality1"
+                             "cuality2 cuality3 cuality3";
+    
+        .div--cardItem {
+            background-color: white;
+        }
+
+        .div--cardItem1 {
+            grid-area: cuality1;
+        }
+
+        .div--cardItem2 {
+            grid-area: cuality2;
+        }
+
+        .div--cardItem3 {
+            grid-area: cuality3;
+        }
+    
+    }
+
+    .div--info {
+        grid-area: card;
+        background-color: red;
+        display: flex;
+
+        .div--cardContainer {
+            background-color: white;
+            
+            .div--cardText {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                
+                h2,p {
+                    font-family: 'Heebo', sans-serif; 
+                }
+
+                h2 {
+                    font-size: 1.5em;
+                }
+
+                p {
+                    text-align: center;
+                    margin-top: 20px;
+                    padding: 0 5%;
+                    font-size: 1em;
+                }
+            }
+
+            .img--card {
+                margin-top: -50px;
+                margin-bottom: 20px;
+                border: 5px solid white;
+                border-radius: 100%;
+                width: 100px;
+                -webkit-box-shadow: 13px 14px 5px -10px rgba(0,0,0,0.13);
+                -moz-box-shadow: 13px 14px 5px -10px rgba(0,0,0,0.13);
+                box-shadow: 13px 14px 5px -10px rgba(0,0,0,0.13);
+            }
+            .div--cardColor{
+                height:  30%;
+                background-color: #3F3D56;
+            }
+        }// div card container
+    }//Div info card
+
+    .div--footer {
+        grid-area: foot;
+    }
 
     .a--rocket { 
         position: absolute;
@@ -163,11 +246,12 @@
         width: 50px;
         background-color:  rgba(106,103,191,1);
     }
+
     .img--rocket {
         height: 100%;
        width: 100%;
     }
-}
+}// section secundary
 
 @media screen and (max-width: 1080px) {
 }
