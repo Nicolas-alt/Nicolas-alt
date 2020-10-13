@@ -167,7 +167,13 @@
                              "cuality2 cuality3 cuality3";
     
         .div--cardItem {
-            background-color: white;
+           border: 3px solid white;
+           border-radius: 10px;
+
+            .img--cardImage {
+                height: 100px;
+                width: 150px;
+            }
         }
 
         .div--cardItem1 {
@@ -186,53 +192,42 @@
 
     .div--info {
         grid-area: card;
-        background-color: red;
         display: flex;
 
         .div--cardContainer {
-            background-color: white;
+            border: 2px solid #F2C068;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             
             .div--cardText {
                 display: flex;
-                justify-content: center;
-                align-items: center;
-                
                 h2,p {
                     font-family: 'Heebo', sans-serif; 
+                    text-align: center;
                 }
 
-                h2 {
-                    font-size: 1.5em;
-                }
+                h2 { font-size: 1.5em; }
 
                 p {
-                    text-align: center;
                     margin-top: 20px;
                     padding: 0 5%;
                     font-size: 1em;
                 }
             }
-
-            .img--card {
-                margin-top: -50px;
-                margin-bottom: 20px;
-                border: 5px solid white;
-                border-radius: 100%;
-                width: 100px;
-                -webkit-box-shadow: 13px 14px 5px -10px rgba(0,0,0,0.13);
-                -moz-box-shadow: 13px 14px 5px -10px rgba(0,0,0,0.13);
-                box-shadow: 13px 14px 5px -10px rgba(0,0,0,0.13);
-            }
             .div--cardColor{
-                height:  30%;
-                background-color: #3F3D56;
+                border-top-left-radius: 10px;
+                border-bottom-left-radius: 10px;
+                height:  100%;
+                width: 400px;
+                background-image: url('../../../assets/img/picture.jpg');
+                background-size: cover;
             }
         }// div card container
     }//Div info card
 
-    .div--footer {
-        grid-area: foot;
-    }
+    .div--footer { grid-area: foot; }
 
     .a--rocket { 
         position: absolute;

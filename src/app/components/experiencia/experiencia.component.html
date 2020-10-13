@@ -1,78 +1,50 @@
 <section class="section--experiencia">
-
-    <!-- <div class="card text-center">
-        <div class="card-header">
-            LogBook
-        </div>
-        <div class="card-body">
-          <p class="card-text">Proyecto Lb</p>
-        </div>
-        <div class="card-footer text-muted">
-          Tecnologias
-        </div>
-        <a (click)="goToLink('https://log-book-landing.vercel.app/')" class="btn btn-primary">Ver</a>
-        <a (click)="goToLink('https://github.com/Nicolas-alt/LogBookLanding')"  class="btn btn-outline-info">Ver código</a>
-      </div>
-
-
-      <div class="card text-center">
-        <div class="card-header">
-            Rails Blog
-        </div>
-        <div class="card-body">
-          <p class="card-text">Crear un blog en RoR</p>
-        </div>
-        <div class="card-footer text-muted">
-          Tecnologias
-        </div>
-        <a [routerLink]="['/ups']" class="btn btn-primary">Ver</a>
-        <a (click)="goToLink('https://github.com/Nicolas-alt/RailsBlog')" class="btn btn-outline-info">Ver código</a>
-      </div>
-
-      <div class="card text-center">
-        <div class="card-header">
-            Discovering Music
-        </div>
-        <div class="card-body">
-          <p class="card-text">Web para buscar artistas y sus obras.</p>
-        </div>
-        <div class="card-footer text-muted">
-          Tecnologias
-        </div>
-        <a [routerLink]="['/ups']" class="btn btn-primary">Ver</a>
-        <a (click)="goToLink('https://github.com/Nicolas-alt/DiscoveringMusic')" class="btn btn-outline-info">Ver código</a>
-      </div>
-
-      <div class="card text-center">
-        <div class="card-header">
-            The tables
-        </div>
-        <div class="card-body">
-          <p class="card-text">Un proyecto para ver las tablas de forma dinámica.</p>
-        </div>
-        <div class="card-footer text-muted">
-          Tecnologias
-        </div>
-        <a [routerLink]="['/ups']" class="btn btn-primary">Ver</a>
-        <a (click)="goToLink('https://github.com/Nicolas-alt/The-tables')" class="btn btn-outline-info">Ver código</a>
-      </div> -->
-     
-        <div id="carouselExampleInterval" class="carousel slide div--main animate__animated animate__zoomIn" data-ride="carousel">
+  <div class="div--navBar">
+    <app-nav-bar></app-nav-bar>
+  </div>
+  <div class="div--carruselDestacados">
+    <h2>Proyectos destacados</h2>     
+    <div class="div--destacados">
+        <div id="carouselExampleInterval" 
+              class="carousel slide div--mainCarrusel animate__animated animate__zoomIn" 
+              data-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active" data-interval="8000">
-              <img src="../../../assets/svg/1.svg" class="d-block w-100" alt="Imagen carrusel 1">
+              <img class="img--carrusel" src="../../../assets/img/home.png" class="d-block w-100" alt="Imagen carrusel 1">
             </div>
             <div class="carousel-item" data-interval="8000">
-              <img src="../../../assets/img/home.png" class="d-block w-100" alt="Imagen carrusel 2">
+              <img class="img--carrusel" src="../../../assets/img/ard.png" class="d-block w-100" alt="Imagen carrusel 3">
             </div>
             <div class="carousel-item" data-interval="8000">
-              <img src="../../../assets/img/ard.png" class="d-block w-100" alt="Imagen carrusel 3">
-            </div>
-            <div class="carousel-item" data-interval="8000">
-              <img src="../../../assets/img/lg.png" class="d-block w-100" alt="Imagen carrusel 3">
+              <img class="img--carrusel" src="../../../assets/img/lg.png" class="d-block w-100" alt="Imagen carrusel 3">
             </div>
           </div>
-          </div>
-          
-    </section>
-
+        </div>
+    </div>
+  </div> 
+    <h2>Tecnologías con las que he trabajado:</h2>
+    <div class="div--gridTec">
+      <div class="div--tecImg">HTML</div>
+      <div class="div--tecImg">CSS</div>
+      <div class="div--tecImg">Sass</div>
+      <div class="div--tecImg">JavaScript</div>
+      <div class="div--tecImg">Typescript</div>
+      <div class="div--tecImg">Angular</div>
+      <div class="div--tecImg">React</div>
+      <div class="div--tecImg">Ruby</div>
+      <div class="div--tecImg">Ruby on Rails</div>
+      <div class="div--tecImg">Php</div>
+      <div class="div--tecImg">Ionic</div>
+      <div class="div--tecImg">Adobe ilustrator</div>
+      <div class="div--tecImg">Pug</div>
+      <div class="div--tecImg">Git</div>
+    </div>
+        
+    <h2>Otros Proyectos</h2>
+    <div class="div--gridProjects">
+        <div  *ngFor="let proyecto of projects" class="{{ proyecto.class }}">
+          <img class="img--proyecto" src="{{ proyecto.image }}" alt="Imagen proyecto" />
+        </div>
+    </div>
+    <app-footer></app-footer>
+</section>
