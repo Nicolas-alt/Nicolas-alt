@@ -42,8 +42,10 @@
         
     <h2>Otros Proyectos</h2>
     <div class="div--gridProjects">
-        <div  *ngFor="let proyecto of projects" class="{{ proyecto.class }}">
-          <img class="img--proyecto" src="{{ proyecto.image }}" alt="Imagen proyecto" />
+        <div  *ngFor="let proyecto of projects" class="div--proyecto {{ proyecto.class }}">
+          <a href="{{ proyecto.url }}"  target="_bank">
+            <img class="img--proyecto" src="{{ proyecto.image }}" alt="Imagen proyecto" />
+          </a>
         </div>
     </div>
     <app-footer></app-footer>
