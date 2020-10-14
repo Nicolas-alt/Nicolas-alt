@@ -2,24 +2,14 @@
   <div class="div--navBar">
     <app-nav-bar></app-nav-bar>
   </div>
-  <div class="div--carruselDestacados">
-    <h2>Proyectos destacados</h2>     
-    <div class="div--destacados">
-      <div id="carouselExampleInterval" class="carousel slide div--mainCarrusel animate__animated animate__zoomIn" data-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active" data-interval="8000">
-              <img class="img--carrusel" src="../../../assets/img/home.png" class="d-block w-100" alt="Imagen carrusel 1">
-            </div>
-            <div class="carousel-item" data-interval="8000">
-              <img class="img--carrusel" src="../../../assets/img/ard.png" class="d-block w-100" alt="Imagen carrusel 3">
-            </div>
-            <div class="carousel-item" data-interval="8000">
-              <img class="img--carrusel" src="../../../assets/img/lg.png" class="d-block w-100" alt="Imagen carrusel 3">
-            </div>
-          </div>
-        </div> 
-    </div>
-  </div> 
+  <h2>Proyectos destacados</h2>
+    <div class="div--gridProjects">
+        <div  *ngFor="let proyecto of projects" class="div--proyecto {{ proyecto.class }}">
+          <a href="{{ proyecto.url }}"  target="_bank">
+            <img class="img--proyecto" src="{{ proyecto.image }}" alt="Imagen proyecto" />
+          </a>
+        </div>
+      </div>
     <h2>Tecnologías con las que he trabajado:</h2>
     <div class="div--gridTec">
       <div class="div--tecImg"><div class="div--img html"></div> <p> </p> HTML</div>
@@ -37,14 +27,6 @@
       <div class="div--tecImg"><div class="div--img pug"></div> <p> </p> Pug</div>
       <div class="div--tecImg"><div class="div--img git"></div> <p> </p> Git</div>
     </div>
-        
-    <h2>Otros Proyectos</h2>
-    <div class="div--gridProjects">
-        <div  *ngFor="let proyecto of projects" class="div--proyecto {{ proyecto.class }}">
-          <a href="{{ proyecto.url }}"  target="_bank">
-            <img class="img--proyecto" src="{{ proyecto.image }}" alt="Imagen proyecto" />
-          </a>
-        </div>
-    </div>
+
     <app-footer></app-footer>
 </section>
