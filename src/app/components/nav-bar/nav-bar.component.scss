@@ -35,3 +35,21 @@ nav {
         width: 5px;
     }
 }
+
+@media screen and (max-width: 360px) {
+nav { justify-content: center; }
+
+.ul--container {
+    margin: 0;
+    padding: 0;
+}
+
+.li--item {
+    margin-left: 20px;
+
+    .a--navMenu {
+        font-size: 1em;
+    }
+}
+
+}
