@@ -231,3 +231,194 @@ h2 {
     font-weight: 700;
     color: white;
 }
+
+@media screen and (max-width: 650px) {
+
+ .section--experiencia {
+    
+    .div--navBar { padding-right: 80px; }
+
+    .div--gridTec {
+        height: auto;
+        display: grid;
+        grid-gap: 5px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(9, 1fr);
+        grid-template-areas: "html js"
+                             "sass sass"
+                             "css ruby"
+                             "types ai"
+                             "rail rail" 
+                             "php  php"
+                             "git  pug "
+                             "ion   ion"
+                             "react angular";
+        
+        .div--tecImg {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            color: white;
+            border-radius: 10px;
+            border: 2.5px solid white;
+        }
+
+
+        .div--img {
+            height: 100px;
+            width: 100px;
+        }
+
+        p {
+            margin: 0;
+        }
+
+        div:nth-child(1) {
+            grid-area: html;
+        }
+        .html {
+            background-image: url('https://devicons.github.io/devicon/devicon.git/icons/html5/html5-original-wordmark.svg');
+        }
+
+        div:nth-child(2) {
+            grid-area: css;
+        }
+        .css {
+            background-image: url('https://devicons.github.io/devicon/devicon.git/icons/css3/css3-original-wordmark.svg');
+        }
+
+        div:nth-child(3) {
+            grid-area: sass;
+        }
+
+        .sass {
+            background-image: url('https://devicons.github.io/devicon/devicon.git/icons/sass/sass-original.svg');
+        }
+
+        div:nth-child(4) {
+            grid-area: js;
+        }
+
+        .javaScript {
+            background-image: url('https://devicons.github.io/devicon/devicon.git/icons/javascript/javascript-original.svg');
+        }
+
+        div:nth-child(5) {
+            grid-area: types;
+        }
+
+        .typescript {
+            background-image: url('https://devicons.github.io/devicon/devicon.git/icons/typescript/typescript-original.svg');
+        }
+
+        div:nth-child(6) {
+            grid-area: angular;
+        }
+
+        .angular {
+            background-image: url('https://devicons.github.io/devicon/devicon.git/icons/angularjs/angularjs-original.svg');
+        }
+
+        div:nth-child(7) {
+            grid-area: react;
+        }
+
+        .react {
+            background-image: url('https://devicons.github.io/devicon/devicon.git/icons/react/react-original-wordmark.svg');
+        }
+
+        div:nth-child(8) {
+            grid-area: ruby;
+        }
+
+        .ruby {
+            background-image: url('https://devicons.github.io/devicon/devicon.git/icons/ruby/ruby-original-wordmark.svg');
+        }
+
+        div:nth-child(9) {
+            grid-area: rail;
+        }
+
+        .ror {
+            background-image: url('https://devicons.github.io/devicon/devicon.git/icons/rails/rails-original-wordmark.svg');
+        }   
+
+        div:nth-child(10) {
+            grid-area: php;
+        }
+
+        .php {
+            background-image: url('https://devicons.github.io/devicon/devicon.git/icons/php/php-original.svg');
+        }
+
+        div:nth-child(11) {
+            grid-area: ion;
+        }
+
+        .ionic {
+            background-image: url('https://upload.wikimedia.org/wikipedia/commons/d/d1/Ionic_Logo.svg');
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        div:nth-child(12) {
+            grid-area: ai;
+        }
+        
+        .ai {
+            background-image: url('https://www.vectorlogo.zone/logos/adobe_illustrator/adobe_illustrator-icon.svg');
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        div:nth-child(13) {
+            grid-area: pug;
+        }
+        
+        .pug {
+            background-image: url('https://cdn.worldvectorlogo.com/logos/pug.svg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+
+        div:nth-child(14) {
+            grid-area: git;
+        }
+
+        .git {
+            background-image: url('https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg');
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+}
+
+    .div--gridProjects {
+       height: auto;
+       width: 100%;
+       padding: 0 30px;
+       margin: 25px 0;
+       overflow: none;
+       display: grid;
+       grid-gap: 5px;
+       grid-template-columns: repeat(1, 1fr);
+       grid-template-rows: repeat(6, 300px);
+       grid-template-areas: "room"
+                            "ard"
+                            "rail" 
+                            "fylo"
+                            "book"
+                            "lb";
+    }
+}
+
+.carousel {
+    height: 60%;
+    width: 60%;
+}
+
+h2 {
+    font-size: 1.5em;
+}   
+}
