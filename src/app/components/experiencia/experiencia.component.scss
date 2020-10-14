@@ -36,65 +36,143 @@
                              "ion  ion  react angular";
         
         .div--tecImg {
-            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            color: white;
+            border-radius: 10px;
+            border: 2.5px solid white;
+        }
+
+
+        .div--img {
+            height: 100px;
+            width: 100px;
+        }
+
+        p {
+            margin: 0;
         }
 
         div:nth-child(1) {
             grid-area: html;
         }
+        .html {
+            background-image: url('https://devicons.github.io/devicon/devicon.git/icons/html5/html5-original-wordmark.svg');
+        }
 
         div:nth-child(2) {
             grid-area: css;
+        }
+        .css {
+            background-image: url('https://devicons.github.io/devicon/devicon.git/icons/css3/css3-original-wordmark.svg');
         }
 
         div:nth-child(3) {
             grid-area: sass;
         }
+
+        .sass {
+            background-image: url('https://devicons.github.io/devicon/devicon.git/icons/sass/sass-original.svg');
+        }
+
         div:nth-child(4) {
             grid-area: js;
+        }
+
+        .javaScript {
+            background-image: url('https://devicons.github.io/devicon/devicon.git/icons/javascript/javascript-original.svg');
         }
 
         div:nth-child(5) {
             grid-area: types;
         }
+
+        .typescript {
+            background-image: url('https://devicons.github.io/devicon/devicon.git/icons/typescript/typescript-original.svg');
+        }
+
         div:nth-child(6) {
             grid-area: angular;
+        }
+
+        .angular {
+            background-image: url('https://devicons.github.io/devicon/devicon.git/icons/angularjs/angularjs-original.svg');
         }
 
         div:nth-child(7) {
             grid-area: react;
         }
 
+        .react {
+            background-image: url('https://devicons.github.io/devicon/devicon.git/icons/react/react-original-wordmark.svg');
+        }
+
         div:nth-child(8) {
             grid-area: ruby;
         }
+
+        .ruby {
+            background-image: url('https://devicons.github.io/devicon/devicon.git/icons/ruby/ruby-original-wordmark.svg');
+        }
+
         div:nth-child(9) {
             grid-area: rail;
         }
 
+        .ror {
+            background-image: url('https://devicons.github.io/devicon/devicon.git/icons/rails/rails-original-wordmark.svg');
+        }   
+
         div:nth-child(10) {
             grid-area: php;
+        }
+
+        .php {
+            background-image: url('https://devicons.github.io/devicon/devicon.git/icons/php/php-original.svg');
         }
 
         div:nth-child(11) {
             grid-area: ion;
         }
 
+        .ionic {
+            background-image: url('https://upload.wikimedia.org/wikipedia/commons/d/d1/Ionic_Logo.svg');
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
         div:nth-child(12) {
             grid-area: ai;
+        }
+        
+        .ai {
+            background-image: url('https://www.vectorlogo.zone/logos/adobe_illustrator/adobe_illustrator-icon.svg');
+            background-repeat: no-repeat;
+            background-position: center;
         }
 
         div:nth-child(13) {
             grid-area: pug;
+        }
+        
+        .pug {
+            background-image: url('https://cdn.worldvectorlogo.com/logos/pug.svg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
         }
 
         div:nth-child(14) {
             grid-area: git;
         }
 
-
-
-
+        .git {
+            background-image: url('https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg');
+            background-repeat: no-repeat;
+            background-position: center;
+        }
 }
 
     .div--gridProjects {
@@ -146,4 +224,10 @@
 .img--proyecto {
     height: 100%;
     width: 100%;
+}
+
+h2 {
+    text-align: center;
+    font-weight: 700;
+    color: white;
 }

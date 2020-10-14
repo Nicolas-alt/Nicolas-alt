@@ -150,7 +150,7 @@
     padding-top: 30px;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows:  3fr 0.5fr;
-    grid-template-areas: "card card card  "
+    grid-template-areas: "card card card"
                          "foot foot foot";
     height: 100vh;
     width: 100%;
@@ -167,8 +167,17 @@
                              "cuality2 cuality3 cuality3";
     
         .div--cardItem {
-           border: 3px solid white;
+           border: 2px solid white;
            border-radius: 10px;
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+           justify-content: center;
+
+            h2 {
+                font-size: 1.5em;
+                color: white;
+            }
 
             .img--cardImage {
                 height: 100px;
@@ -195,7 +204,7 @@
         display: flex;
 
         .div--cardContainer {
-            border: 2px solid #F2C068;
+            border: 2px solid #8E71B1;
             border-radius: 10px;
             display: flex;
             justify-content: center;
@@ -208,12 +217,13 @@
                     text-align: center;
                 }
 
-                h2 { font-size: 1.5em; }
+                h2 { font-size: 1.8em;  color: white; }
 
                 p {
+                    color: white;
                     margin-top: 20px;
-                    padding: 0 5%;
-                    font-size: 1em;
+                    padding: 0 15%;
+                    font-size: 0.9em;
                 }
             }
             .div--cardColor{
