@@ -6,6 +6,10 @@
     width: 100%;
 }
 
+.div--imgDevice {
+    display: none;
+}
+
 .div--img {
     position: relative;
     height: 100%;
@@ -258,8 +262,74 @@
     }
 }// section secundary
 
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 900px) {
+    .section--container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "img text";
+    }
+    
+    .div--img {
+        display: none;
+    
+        .div--typedStrings {
+            display: none;
+       }
+    }
+    
+    .div--imgDevice {
+        display: block;
+        grid-area: img;
+        background-image: url('../../../assets/svg/9.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
+    
+    .div--text {
+        padding-right: 20px;
+    
+       h1 { 
+            font-size: 3.5em;
+            span {
+                margin-left: 2.2em;
+            }    
+        }
+        .p--intro {
+            font-size: 1.5em;
+            display: flex;
+            justify-content: center;
+       }
+    
+        .div--social {
+            margin-top: 10px;
+    
+            i {
+                font-size: 2em;
+            }
+        }
+    
+        .a--projects {
+            margin-bottom: 50px;
+        }
+    }
+    .section--secundary {
+        height: auto;
+        .div--gridContainer {
+            padding: 0 30px;
+            margin-bottom: 30px;
+            display: grid;
+            grid-area: card;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(4, 1fr);
+            grid-gap: 10px;
+            grid-template-areas: "card    "
+                                 "cuality1 "
+                                 "cuality2"
+                                 "cuality3 ";
+        }
+    }
 }
+
 
 @media screen and (max-width: 650px) {
     
@@ -269,46 +339,16 @@
     }
     
     .div--img {
-        position: relative;
-        height: 100%;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
         display: none;
 
         .div--typedStrings {
-            position: absolute;
-            background-color: transparent;
-            top: 40%;
-            left: 32%;
-            height: 30vh;
-            width: 50%;
             display: none;
-    
-    
-            .span--blue {
-                margin-right: 5px;
-                color: #3498DB;
-            }
-    
-            .span--white {
-                margin-right: 5px;
-                color: white;
-            }
-    
-            .span--green {
-                color: #2ECC71;
-            }
-        }
-    
-        .img--main {
-            height: 90%;
-            width: 100%;
-            grid-area: img;
         }
     }
-    
+.div--imgDevice {
+    display: none;
+}
+
     .div--text {
         position: relative;
         width: 100%;
@@ -349,9 +389,7 @@
             margin-top: 10px;
     
             i {
-                margin-right: 10px;
                 font-size: 1.4em;
-                color: white;
             }
         }
     
@@ -360,14 +398,8 @@
         }
     
         a {
-            color: white;
             font-size: 1em;
-            font-weight: 700;
-    
-            img {
-                height: 1em;       
-            }
-        }
+        } 
     }// Div text
     
     .section--secundary {
@@ -491,3 +523,4 @@
         }
     }// section secundar
 }
+
