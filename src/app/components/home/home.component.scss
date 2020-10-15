@@ -387,7 +387,7 @@
             display: grid;
             grid-area: card;
             grid-template-columns:  1fr;
-            grid-template-rows: repeat(5, 300px);
+            grid-template-rows: 1fr repeat(3, 150px);
             grid-gap: 10px;
             grid-template-areas: "card"
                                  "cuality1"
@@ -409,8 +409,8 @@
                 }
     
                 .img--cardImage {
-                    height: 10px;
-                    width: 10px;
+                    height: 90px;
+                    width: 90px;
                 }
             }
     
@@ -445,11 +445,11 @@
                     flex-direction: column;
 
                     h2,p {
-                        font-size: 0.3em;
+                        font-size: 1em;
                         text-align: center;
                     }
     
-                    h2 { color: white; }
+                    h2 { color: white; font-size: 1.5em;}
     
                     p {
                         width: 100%;
