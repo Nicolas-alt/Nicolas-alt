@@ -51,12 +51,12 @@ export class HomeComponent implements OnInit {
 
   const card = ScrollReveal({
     reset: true,
-    duration: 1000
+    duration: 500
   });
   
   card.reveal('.Card',{
     opacity: 0,
-    duration: 1000,
+    duration: 500,
     interval: 500,
     rotate: {x:10} ,
     origin: 'bottom'

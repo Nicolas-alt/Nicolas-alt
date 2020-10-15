@@ -55,17 +55,17 @@ export class ExperienciaComponent implements OnInit {
   constructor() {}
   ngOnInit(): void {
 
-    const card = ScrollReveal({ reset: true });
+    const card = ScrollReveal({ reset: false });
 
      card.reveal('.div--tecImg',{
       opacity: 0,
-      duration: 300,
-      interval: 250,
+      duration: 100,
+      interval: 150,
       rotate: {x:20, y:50 } ,
       origin: 'left'
-    }, 50);
+    }, 20);
 
-    const project = ScrollReveal({ reset: true });
+    const project = ScrollReveal({ reset: false });
 
     setTimeout(()=> {
 
@@ -75,5 +75,5 @@ export class ExperienciaComponent implements OnInit {
       interval: 250,
       origin: 'top'
     }, 80)
-    , 500})}//stTime
+    , 300})}//stTime
 }

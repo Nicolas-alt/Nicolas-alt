@@ -15,7 +15,7 @@ export class FooterComponent implements OnInit {
 
      icons.reveal('.a--media',{
       opacity: 0,
-      delay: 1000,
+      delay: 800,
       duration: 300,
       interval: 250,
       rotate: {x:20, y:50 } ,
