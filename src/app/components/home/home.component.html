@@ -1,15 +1,85 @@
-<section class="section--container">
-<div class="div--middle div--mainContent">
-    <h1>Soy Nicolas <br> <span class="span-h1Content">Jiménez</span></h1>
-    <p>Desarrollador front-end, estudiante en una tecnología en
-       desarrollo de software, apasionado por el desarrollo web.
-    </p>
-    <div class="div--bandera">
-        <img class="img--bandera" src="https://i.ibb.co/1GCQT8n/No-Path-2x.png" alt="Bandera de Colombia">
-        <span>Bog - Col</span>
+<section class="section--container" id=primary>
+  <div class="div--img ">
+    <div class="div--typedStrings">
+      <div id="typed-strings">
+        <p class="p--code">
+          <span class="span--blue">import</span> 
+          <span class="span--white">Greeting</span>
+          <span class="span--blue">from</span>
+          <span class="span--green">'Nicolas.hi';</span>
+        </p>
+        <p>
+          <span id="typed"></span>
+        </p>
+      </div>
     </div>
-</div>
-<div class="div--middle">
-    <img class="img--main" src="../../../assets/svg/undraw_developer_activity_bv83.svg" alt="Imagen usuario Git">
+    <img  class="img--main" src="../../../assets/svg/2.svg" alt="Imagen editor texto." />
+  </div>
+
+<!-- For moviles devices -->
+  <div class="div--imgDevice">
+
+  </div>
+  
+<div class="div--text">    
+  <div class="div--appNavBar">
+    <app-nav-bar></app-nav-bar>
+  </div>
+    <h1 class="animate__animated  animate__fadeInUp">Nicolas <br /><span> Jiménez</span></h1>
+      <p class="p--intro">- <span  class="span--intro" id=dev></span></p>
+      <div class="div--social"  
+           [ngsRevealSet]="{ reset:true }" 
+           [ngsInterval]="300" 
+           [ngsSelector]="'.a--social'">
+        <a class="a--social" href="https://github.com/Nicolas-alt" target="_blank"> <i class='bx bxl-github'></i></a>
+        <a class="a--social" href="https://www.linkedin.com/in/nicolas-jimenez-b20660184/" target="_blank"> <i class='bx bxl-linkedin' ></i></a>
+        <a class="a--social" href="https://twitter.com/Nicolas35103573" target="_blank"> <i class='bx bxl-twitter' ></i></a>
+        <a class="a--social" href="https://gitlab.com/Nicolas-alt" target="_blank"> <i class='bx bxl-gitlab'></i></a>
+      </div>
+      <a  class="div--social a--projects" [routerLink]="['/experiencia']" > Mis proyectos 
+        <img src="../../../assets/svg/icon-angle-right.svg" alt="Arrow icon"> 
+      </a>
 </div>
 </section>
+
+<section class="section--secundary" id="secundary">
+  <div class="div--gridContainer">
+
+      <div class="div--info Card">
+        <div class="div--cardContainer">
+            <div class="div--cardColor"></div>
+            <div class="div--cardText">
+              <div>
+                <h2>Nicolas Jiménez</h2>
+                <p>Desarrollador front-end, estudiante en una tecnología en
+                  desarrollo de software, apasionado por el desarrollo web.
+                  En sus ratos libres disfruta unas buenas partidas en Pubg.
+                </p>
+              </div>
+            </div> 
+        </div>
+      </div>
+
+        <div class="Card div--cardItem div--cardItem1">
+          <img class="img--cardImage" src="../../../assets/svg/16.svg" alt="diseño web imagen" />
+          <h2>Diseño personalizado</h2>
+        </div>
+        
+        <div class="Card div--cardItem div--cardItem2">
+          <img class="img--cardImage" src="../../../assets/svg/15.svg" alt="responsive imagen" />
+          <h2>Web responsive</h2>
+        </div>
+
+        <div class="Card div--cardItem div--cardItem3">
+          <img class="img--cardImage" src="../../../assets/svg/14.svg" alt="Imagen calidad" />
+          <h2>Alta calidad</h2>
+        </div>  
+  </div>
+
+  <a class="a--rocket" href="#primary">
+    <img class="img--rocket" src="../../../assets/svg/5.svg" alt="To top">
+  </a>
+  <div class="div--footer">
+    <app-footer></app-footer>
+  </div>
+</section> 

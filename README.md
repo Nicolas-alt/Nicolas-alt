@@ -21,7 +21,6 @@
 
 ## 👨‍💻 All of my projects are available at [https://nicolas-alt.vercel.app/](https://nicolas-alt.vercel.app/)
 <br />
-<br />
 
 ##  🌱 I’m currently learning ...
 
@@ -77,6 +76,7 @@
 <br />
 <br />
 
+<!-- Tools zone  -->
 <h3 align="left">🔨 Tools</h3>
 <p align="left"> 
 <br />
@@ -111,10 +111,8 @@
 </p>
 <hr />
 <br />
-<br />
 
 ## 🤩 Relevant projects
-
 <a href="https://github.com/Nicolas-alt/LogBookLanding">
   <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=Nicolas-alt&repo=LogBookLanding" />
 </a>
@@ -123,7 +121,11 @@
 </a>
 
 <hr />
+
+<br />
+
+<!-- Connect -->
 <p align="left">
-<h3 align="left">Connect with me:</h3>
-<a href="https://twitter.com/nicolas35103573" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/twitter.svg" alt="nicolas35103573" height="30" width="40" /></a>
+    <h3 align="left">Connect with me:</h3>
+    <a href="https://twitter.com/nicolas35103573" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/twitter.svg" alt="nicolas35103573" height="30" width="40" /></a>
 </p>
