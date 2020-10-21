@@ -9,6 +9,7 @@ import { HomeComponent } from './components/home/home.component';
 import { Page404Component } from './components/page404/page404.component';
 import { ExperienciaComponent } from './components/experiencia/experiencia.component';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
+import { AboutComponent } from './components/about/about.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { NavBarComponent } from './components/nav-bar/nav-bar.component';
     HomeComponent,
     Page404Component,
     ExperienciaComponent,
-    NavBarComponent
+    NavBarComponent,
+    AboutComponent
   ],
   imports: [
     NgsRevealModule,
