@@ -10,6 +10,7 @@ import { Page404Component } from './components/page404/page404.component';
 import { ExperienciaComponent } from './components/experiencia/experiencia.component';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { AboutComponent } from './components/about/about.component';
+import { ProjectViewComponent } from './components/project-view/project-view.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { AboutComponent } from './components/about/about.component';
     Page404Component,
     ExperienciaComponent,
     NavBarComponent,
-    AboutComponent
+    AboutComponent,
+    ProjectViewComponent
   ],
   imports: [
     NgsRevealModule,
