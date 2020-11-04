@@ -68,10 +68,6 @@
     <img src="https://devicons.github.io/devicon/devicon.git/icons/ruby/ruby-original-wordmark.svg" alt="ruby" width="40" height="40"/>
 </a>
 
-<a href="https://www.php.net" target="_blank">
-    <img src="https://devicons.github.io/devicon/devicon.git/icons/php/php-original.svg" alt="php" width="40" height="40"/>
-</a>
-
 </p>
 <br />
 <br />
