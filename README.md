@@ -11,8 +11,8 @@
 ## 🔭 I’m currently working on ...
 
 <p align="center">
-    <a href="https://github.com/Nicolas-alt/DiscoveringMusic" style="margin: 20px;">
-        <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=Nicolas-alt&repo=DiscoveringMusic" />
+    <a href="https://github.com/Nicolas-alt/AppWeather" style="margin: 20px;">
+        <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=Nicolas-alt&repo=AppWeather" />
     </a>
     <a href="https://github.com/DanielPaezb/LogBook">
         <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=DanielPaezb&repo=LogBook" />

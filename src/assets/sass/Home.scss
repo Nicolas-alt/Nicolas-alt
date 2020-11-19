@@ -235,7 +235,7 @@
                 border-bottom-left-radius: 10px;
                 height:  100%;
                 width: 400px;
-                background-image: url('../../../assets/img/picture.jpg');
+                background-image: url('../img/picture.jpg');
                 background-size: cover;
             }
         }// div card container
@@ -279,7 +279,7 @@
     .div--imgDevice {
         display: block;
         grid-area: img;
-        background-image: url('../../../assets/svg/9.svg');
+        background-image: url('../svg/9.svg');
         background-repeat: no-repeat;
         background-size: contain;
         background-position: center;
@@ -496,7 +496,7 @@
                     width: 100%;
                     border-top-left-radius: 10px;
                     border-bottom-left-radius: 10px;
-                    background-image: url('../../../assets/img/picture.jpg');
+                    background-image: url('../img/picture.jpg');
                     background-size: cover;
                 }
             }// div card container

@@ -1,4 +1,5 @@
-const easter =    console.log(`%c
+export const easter = _ => {
+  console.log(`%c
 ---------------------------------------
 |         Hi there! You're on           |
 ---------------------------------------
@@ -27,3 +28,4 @@ const easter =    console.log(`%c
 
                 `,
     "font-family:monospace; color:#9B59B6;");
+}
