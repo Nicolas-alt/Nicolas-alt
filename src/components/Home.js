@@ -1,15 +1,17 @@
 import React, { useEffect } from 'react'
 
 import '../assets/sass/Home.scss';
+import Header from '../templates/Header';
 import Wave from '../templates/Wave';
 import { easter } from '../utils/easterEgg';
 
-export const Home = _ => {
+const Home = _ => {
   {/*useEffect(() => {easter()}, [])*/}
   return (
     <>  
-      Home
-    <Wave /> 
+      <Header />
+        Home
+      <Wave /> 
     </>
   );
 }
