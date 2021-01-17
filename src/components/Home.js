@@ -1,4 +1,5 @@
 import React from 'react'
+import {Helmet} from "react-helmet"
 
 import '../assets/sass/Home.scss';
 
@@ -27,8 +28,15 @@ const Home = _ => {
   
   */}
   return (
-    <>  
-        Home
+    <>
+      <Helmet>
+          <title>Nicolas Jiménez</title>
+          <meta name="description" content="Nicolas Jiménez, desarrollador web Bogotá. Codifico ideas." />
+          <meta name="theme-color" content="#000000" />
+      </Helmet>
+      <section className="section--home">  
+          Home
+      </section>
     </>
   );
 }
