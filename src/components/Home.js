@@ -1,5 +1,6 @@
 import React from 'react'
 import {Helmet} from "react-helmet"
+import Flip from 'react-reveal/Flip';
 
 import '../assets/sass/Home.scss';
 
@@ -29,6 +30,8 @@ const Home = _ => {
   */}
   return (
     <>
+     <Flip left>
+
       <Helmet>
           <title>Nicolas Jiménez</title>
           <meta name="description" content="Nicolas Jiménez, desarrollador web Bogotá. Codifico ideas." />
@@ -37,6 +40,7 @@ const Home = _ => {
       <section className="section--home">  
           Home
       </section>
+     </Flip>
     </>
   );
 }

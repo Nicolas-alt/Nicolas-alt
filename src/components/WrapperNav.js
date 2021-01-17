@@ -1,10 +1,13 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import { NavLink } from 'react-router-dom'
 import Routes from '../routes/Routes'
 
 import '../assets/sass/WrapperNav.scss'
 
+
 const WrapperNav = _ => {
+   // useEffect(()=>{window.scrollTo(0,1);},[])
+    
     return (
         <section className="section--principal">
             <header className="header--menu">

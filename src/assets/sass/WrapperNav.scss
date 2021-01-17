@@ -58,6 +58,8 @@ i {
             background-color: yellow;
             height: 40px;
             width: 100%;
+            position: relative;
+            z-index: 10;
 
             nav {
                 height: 100%;
