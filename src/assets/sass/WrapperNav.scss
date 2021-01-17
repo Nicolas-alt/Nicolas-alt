@@ -1,0 +1,48 @@
+.section--principal {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+
+    .header--menu {
+        height: 100%;
+        width: 50px;
+        background-color: red;
+
+        nav {
+            height: 100%;
+            width: 100%;
+
+            ul {
+                height: 100%;
+                width: 100%;
+                margin: 0;
+                padding: 0;
+            }
+        }
+    }
+
+    .div--router {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 900px ) {
+    .section--principal {
+        flex-direction: column-reverse;
+
+        .header--menu {
+            background-color: yellow;
+            height: 100px;
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 750px ) {
+    .section--principal {
+        .header--menu {
+            background-color: rosybrown;
+        }
+    }
+}

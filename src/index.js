@@ -2,12 +2,12 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 
 import './assets/sass/index.scss'
-import WrapperNav from './components/WrapperNav'
+import AppRouter from './routes/AppRouter';
 
 
 ReactDOM.render(
   <React.StrictMode>
-    <WrapperNav />
+    <AppRouter />
   </React.StrictMode>,
   document.getElementById('root')
 );

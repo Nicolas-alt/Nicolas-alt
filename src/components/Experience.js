@@ -2,7 +2,7 @@ import React from 'react'
 
 export const Experience = _ => {
   return (
-    <section class="section--experiencia">
+    <section className="section--experiencia">
       Experience 
     </section>
   )
