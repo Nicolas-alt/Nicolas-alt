@@ -1,23 +1,9 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 
 import '../assets/sass/Home.scss';
-import Header from '../templates/Header';
-import Wave from '../templates/Wave';
-import { easter } from '../utils/easterEgg';
 
 const Home = _ => {
   {/*useEffect(() => {easter()}, [])*/}
-  return (
-    <>  
-      <Header />
-        Home
-      <Wave /> 
-    </>
-  );
-}
-
-export default Home;
-
 {/* 
      <a classNameName="a--social" href="https://github.com/Nicolas-alt" target="_blank">
               <i classNameName='bx bxl-github'></i>
@@ -40,3 +26,12 @@ export default Home;
     En sus ratos libres disfruta unas buenas partidas en Pubg.
   
   */}
+  return (
+    <>  
+        Home
+    </>
+  );
+}
+
+export default Home;
+
