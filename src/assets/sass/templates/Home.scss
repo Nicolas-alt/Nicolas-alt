@@ -1,13 +1,35 @@
+$pMaxFontWeight: 2rem;
+$textColor: #00e3fe;
+
 .section--home {
   height: 100%;
   width: 100%;
-  background-color: yellow;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 
+  p:first-child {
+    color: $textColor;
+    font-size: clamp(1rem, 7vw, $pMaxFontWeight);
+    font-weight: 100;
+  }
+
   h2 {
-    font-family: 'Heebo';
+    font-size: clamp(1.5rem, 10vw, 4rem);
+    font-weight: 400;
+  }
+
+  .p--typed {
+    font-size: clamp(1.8rem, 7vw, $pMaxFontWeight);
+    font-weight: 200;
+
+    span {
+      color: $textColor;
+    }
+  }
+
+  i {
+    color: $textColor;
   }
 }
