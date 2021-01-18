@@ -1,11 +1,7 @@
-import React from 'react'
+import React from 'react';
 
-const DetailsProject = _ => {
-    return (
-        <div>
-            
-        </div>
-    )
-}
+const DetailsProject = () => {
+  return <div></div>;
+};
 
-export default DetailsProject
+export default DetailsProject;

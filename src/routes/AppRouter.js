@@ -1,16 +1,16 @@
-import React from 'react'
-import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
+import React from 'react';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 import WrapperNav from '../components/WrapperNav';
 
-export const AppRouter = _ => {
+export const AppRouter = () => {
   return (
     <Router>
       <Switch>
-        <Route path="/" component={ WrapperNav } />
+        <Route path="/" component={WrapperNav} />
       </Switch>
     </Router>
-  )
-}
+  );
+};
 
-export default AppRouter
+export default AppRouter;

@@ -1,11 +1,11 @@
-import React from 'react'
+import React from 'react';
 
-const Footer = _ => {
-    return (
-        <footer>
-           <h3>About me</h3> 
-        </footer>
-    )
-}
+const Footer = () => {
+  return (
+    <footer>
+      <h3>About me</h3>
+    </footer>
+  );
+};
 
-export default Footer
+export default Footer;
