@@ -1,11 +1,11 @@
 import React from 'react';
-import Flip from 'react-reveal/Flip';
+import Fade from 'react-reveal/Fade';
 
 import '../assets/sass/templates/About.scss';
 import CustomHelmet from '../components/CustomHelmet';
 const About = () => {
   return (
-    <Flip left>
+    <Fade right>
       <CustomHelmet
         titlePage="About Me"
         contentText="Un vistazo acerca de mi vida profesional."
@@ -44,7 +44,7 @@ const About = () => {
           <i className="bx bxl-gitlab"></i>
         </a>
       </section>
-    </Flip>
+    </Fade>
   );
 };
 

@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import Fade from 'react-reveal/Fade';
+import { Link } from 'react-router-dom';
 import Typed from 'typed.js';
 
 import '../assets/sass/templates/Home.scss';
@@ -32,9 +33,12 @@ const Home = () => {
       <section className="section--home">
         <p>Hi there, i am</p>
         <h2>Nicolas Jiménez</h2>
-        <p>
-          I'm a <span id="dev"></span>{' '}
+        <p className="p--typed">
+          I'm a <span id="dev"></span>
         </p>
+        <Link to="/about">
+          <i className="bx bx-right-arrow-alt"></i>
+        </Link>
       </section>
     </Fade>
   );
