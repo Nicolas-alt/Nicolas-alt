@@ -1,0 +1,21 @@
+.div--titlePage {
+  height: 60px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  span {
+    background-color: black;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 2px;
+    width: 100px;
+  }
+
+  p {
+    text-transform: uppercase;
+    color: lighten(#000000, 50%);
+    font-size: clamp(1rem, 7vw, 1.3rem);
+  }
+}
