@@ -8,7 +8,7 @@ import CustomHelmet from '../components/CustomHelmet';
 
 const Home = () => {
   useEffect(() => {
-    let dev = new Typed('#dev', {
+    new Typed('#dev', {
       strings: [
         'Front dev 🎨',
         'Desarrollador 🧩',
