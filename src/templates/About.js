@@ -25,17 +25,21 @@ const About = () => {
             <p>
               Desarrollador front-end, estudiante en una tecnología en
               desarrollo de software, apasionado por el desarrollo web. En sus
-              ratos libres disfruta unas buenas partidas en Pubg.
+              ratos libres disfruta unas buenas partidas en Pubg. Me interesa el
+              desarrollo de aplicaciones híbridas con JavaScript y Flutter
             </p>
-            <div>
+            <div className="div--tech">
               <h4>My Stack</h4>
               <div>
-                <i class="bx bxl-javascript"></i>
-                <i class="bx bxl-react"></i>
-                <i class="bx bxl-nodejs"></i>
-                <i class="bx bxs-data"></i>
-                <i class="bx bxl-git"></i>
-                <i class="bx bxl-sass"></i>
+                <i
+                  className="bx bxl-javascript"
+                  style={{ color: '#F0DB4F' }}
+                ></i>
+                <i className="bx bxl-react" style={{ color: '#60DAFB' }}></i>
+                <i className="bx bxl-nodejs" style={{ color: '#3C873A' }}></i>
+                <i className="bx bxs-data" style={{ color: '#CCD1D1' }}></i>
+                <i className="bx bxl-git" style={{ color: '#F34F29' }}></i>
+                <i className="bx bxl-sass" style={{ color: '#CC6699' }}></i>
               </div>
             </div>
           </div>

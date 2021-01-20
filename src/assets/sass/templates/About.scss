@@ -1,4 +1,81 @@
 .section--about {
   height: 100%;
   width: 100%;
+  max-height: 100vh;
+
+  h2 {
+    font-weight: 400;
+    margin-left: 10px;
+    font-size: 2em;
+  }
+
+  .div--info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+
+    img {
+      width: 50%;
+    }
+  }
+
+  .div--text {
+    @extend .div--info;
+    width: 40%;
+    flex-direction: column;
+    justify-content: initial;
+    padding-top: 10%;
+
+    h3 {
+      font-size: 2.5em;
+      font-weight: 200;
+      width: 100%;
+      text-align: left;
+      margin-top: 20px;
+      margin-bottom: 40px;
+    }
+
+    p {
+      font-weight: 100;
+      text-align: justify;
+      width: 100%;
+      font-size: 1.3rem;
+    }
+  }
+
+  .div--tech {
+    width: 100%;
+    h4 {
+      font-weight: 200;
+      font-size: 1.4rem;
+      width: inherit;
+    }
+
+    div {
+      width: 100%;
+
+      i {
+        font-size: 3rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .section--about {
+    padding-top: 20px;
+    overflow-y: auto;
+    .div--info {
+      flex-direction: column-reverse;
+    }
+
+    .div--text {
+      width: 100%;
+      flex-direction: column;
+      justify-content: initial;
+      padding: 0 20px;
+    }
+  }
 }
