@@ -3,6 +3,9 @@ import Fade from 'react-reveal/Fade';
 
 import '../assets/sass/templates/Experience.scss';
 import CustomHelmet from '../components/CustomHelmet';
+import ProjectCar from '../components/ProjectCar';
+import TitlePage from '../components/TitlePage';
+import { data } from '../utils/data';
 
 export const Experience = () => {
   return (
@@ -13,11 +16,13 @@ export const Experience = () => {
         contentColor="#543"
       />
       <section className="section--experience">
+        <TitlePage title="TAKE A LOOK AT" />
+        <h2>My Projects</h2>
         <div>
-          <span></span>
-          <p>TAKE A LOOK AT</p>
+          {data.map((data) => (
+            <ProjectCar data={data} />
+          ))}
         </div>
-        <h3>My Projects</h3>
       </section>
     </Fade>
   );
