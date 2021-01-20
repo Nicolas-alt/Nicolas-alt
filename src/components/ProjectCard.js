@@ -1,10 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const ProjectCar = ({ data }) => {
+import '../assets/sass/components/ProjectCard.scss';
+
+const ProjectCard = ({ data }) => {
   const { name } = data;
   return (
-    <Link to={'/project/' + name}>
+    <Link to={'/project/' + name} className="a--card">
       <div>
         <p>{name}</p>
         <h3>Project 01</h3>
@@ -13,4 +15,4 @@ const ProjectCar = ({ data }) => {
   );
 };
 
-export default ProjectCar;
+export default ProjectCard;
