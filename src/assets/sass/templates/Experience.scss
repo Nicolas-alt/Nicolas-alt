@@ -1,11 +1,41 @@
 .section--experience {
   height: 100%;
   width: 100%;
+  display: grid;
+  grid-template-rows: 50px 30px 1fr;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas:
+    'header header'
+    'title title'
+    'content content';
+  padding-bottom: 40px;
+
+  h2 {
+    grid-area: title;
+    margin-left: 10px;
+  }
 
   .div--projects {
     height: 100%;
     width: 100%;
+    grid-area: content;
     display: flex;
     flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .section--experience {
+    overflow-y: auto;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      'header'
+      'title'
+      'content';
+    padding: 0 20px;
+
+    .div--text {
+      padding-top: 20px;
+    }
   }
 }
