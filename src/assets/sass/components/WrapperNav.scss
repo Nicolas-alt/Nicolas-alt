@@ -71,11 +71,19 @@ $fontIconSize: 2rem;
       width: 100%;
       position: relative;
       z-index: 10;
+      background-color: yellow;
+      border-top-left-radius: 80px;
+      border-top-right-radius: 80px;
 
       .i--menu {
         display: none;
       }
-
+      .red {
+        background-color: red;
+        .i--iconsNav {
+          color: red;
+        }
+      }
       nav {
         height: 100%;
         width: 100%;
@@ -103,7 +111,5 @@ $fontIconSize: 2rem;
 
 @media screen and (max-width: 750px) {
   .section--principal {
-    .header--menu--close {
-    }
   }
 }

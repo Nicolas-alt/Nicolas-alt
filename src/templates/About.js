@@ -18,29 +18,24 @@ const About = () => {
         <TitlePage title="Resume" />
         <h2>About Me</h2>
 
-        <div className="div--info">
-          <img src={movile} alt="Movile" />
-          <div className="div--text">
-            <h3>I'm a web developer</h3>
-            <p>
-              Desarrollador front-end, estudiante en una tecnología en
-              desarrollo de software, apasionado por el desarrollo web. En sus
-              ratos libres disfruta unas buenas partidas en Pubg. Me interesa el
-              desarrollo de aplicaciones híbridas con JavaScript y Flutter
-            </p>
-            <div className="div--tech">
-              <h4>My Stack</h4>
-              <div>
-                <i
-                  className="bx bxl-javascript"
-                  style={{ color: '#F0DB4F' }}
-                ></i>
-                <i className="bx bxl-react" style={{ color: '#60DAFB' }}></i>
-                <i className="bx bxl-nodejs" style={{ color: '#3C873A' }}></i>
-                <i className="bx bxs-data" style={{ color: '#CCD1D1' }}></i>
-                <i className="bx bxl-git" style={{ color: '#F34F29' }}></i>
-                <i className="bx bxl-sass" style={{ color: '#CC6699' }}></i>
-              </div>
+        <img src={movile} alt="Movile" />
+        <div className="div--text">
+          <h3>I'm a web developer</h3>
+          <p>
+            Desarrollador front-end, estudiante en una tecnología en desarrollo
+            de software, apasionado por el desarrollo web. En sus ratos libres
+            disfruta unas buenas partidas en Pubg. Me interesa el desarrollo de
+            aplicaciones híbridas con JavaScript y Flutter
+          </p>
+          <div className="div--tech">
+            <h4>My Stack</h4>
+            <div>
+              <i className="bx bxl-javascript" style={{ color: '#F0DB4F' }}></i>
+              <i className="bx bxl-react" style={{ color: '#60DAFB' }}></i>
+              <i className="bx bxl-nodejs" style={{ color: '#3C873A' }}></i>
+              <i className="bx bxs-data" style={{ color: '#CCD1D1' }}></i>
+              <i className="bx bxl-git" style={{ color: '#F34F29' }}></i>
+              <i className="bx bxl-sass" style={{ color: '#CC6699' }}></i>
             </div>
           </div>
         </div>

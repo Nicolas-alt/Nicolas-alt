@@ -3,7 +3,7 @@ import Fade from 'react-reveal/Fade';
 
 import '../assets/sass/templates/Experience.scss';
 import CustomHelmet from '../components/CustomHelmet';
-import ProjectCar from '../components/ProjectCar';
+import ProjectCard from '../components/ProjectCard';
 import TitlePage from '../components/TitlePage';
 import { data } from '../utils/data';
 
@@ -18,9 +18,9 @@ export const Experience = () => {
       <section className="section--experience">
         <TitlePage title="TAKE A LOOK AT" />
         <h2>My Projects</h2>
-        <div>
+        <div className="div--projects">
           {data.map((data) => (
-            <ProjectCar data={data} />
+            <ProjectCard data={data} />
           ))}
         </div>
       </section>
