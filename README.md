@@ -7,7 +7,6 @@ A passionate frontend developer.
 <br />
 
 <p align="center">
-
     <a href="https://github.com/anuraghazra/github-readme-stats" style="margin: 50px">
         <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Nicolas-alt&layout=compact" />
     </a>
@@ -18,14 +17,13 @@ A passionate frontend developer.
 
 #### 👨‍💻 All of my projects are available at: [https://nicolas-alt.vercel.app/](https://nicolas-alt.vercel.app/)
 
-<img src="./src/assets/icons/red.gif" style="width: 50px">
-<img src="./src/assets/icons/yellow.gif" style="width: 50px">
+<img src="./src/assets/icons/red.gif" style="width: 10px">
+
 <hr />
 <br />
 
 <!-- Connect -->
 <h3 align="center">Get in touch with me:</h3>
-
     <a align="center" href="https://twitter.com/nicolas35103573" target="blank">
         <img align="center" src="./src/assets/icons/twitter.png" alt="nicolas35103573" style="margin-right: 25px" />
     </a>
