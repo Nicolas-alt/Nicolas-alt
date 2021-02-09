@@ -6,7 +6,6 @@
   .button--return {
     border: none;
     background-color: transparent;
-    position: fixed;
 
     i {
       font-size: 2rem;
@@ -18,7 +17,7 @@
   }
 
   .div--image {
-    background-image: url('../../img/rick.png');
+    background-image: url("../../img/rick.png");
     background-attachment: fixed;
     background-position: center;
     background-size: contain;
@@ -29,7 +28,5 @@
     height: 150vh;
     width: 100%;
     background-color: yellow;
-    position: relative;
-    z-index: 10;
   }
 }
