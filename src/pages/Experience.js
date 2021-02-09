@@ -1,5 +1,4 @@
 import React from 'react';
-import Fade from 'react-reveal/Fade';
 
 import '../assets/sass/templates/Experience.scss';
 import CustomHelmet from '../components/CustomHelmet';
@@ -9,7 +8,7 @@ import { data } from '../utils/data';
 
 export const Experience = () => {
   return (
-    <Fade right>
+    <>
       <CustomHelmet
         titlePage="My experience"
         contentText="Mi experiencia como front dev"
@@ -24,7 +23,7 @@ export const Experience = () => {
           ))}
         </div>
       </section>
-    </Fade>
+    </>
   );
 };
 

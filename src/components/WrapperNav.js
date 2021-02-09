@@ -13,30 +13,32 @@ const WrapperNav = () => {
 
   return (
     <section className="section--principal">
-      <header className={menu ? 'header--menu--open' : 'header--menu--close'}>
+      <header>
         <i className="i--menu bx bx-right-arrow" onClick={handleToggleMenu}></i>
         <nav>
-          <ul>
+          <ul className="ul--links">
             <li>
-              <NavLink exact activeClassName="red" to="/">
+              <NavLink exact activeClassName="link-active" to="/">
                 <i className="i--iconsNav bx bx-home-alt"></i>
                 <span className="span--nav">Home</span>
               </NavLink>
             </li>
             <li>
-              <NavLink exact activeClassName="red" to="/about">
+              <NavLink exact activeClassName="link-active" to="/about">
                 <i className="i--iconsNav bx bx-info-circle"></i>
                 <span className="span--nav">About</span>
               </NavLink>
             </li>
             <li>
-              <NavLink exact activeClassName="red" to="/experience">
+              <NavLink exact activeClassName="link-active" to="/experience">
                 <i className="i--iconsNav bx bx-briefcase-alt-2"></i>
                 <span className="span--nav">Experience</span>
               </NavLink>
             </li>
+          </ul>
 
-            {/*Social links */}
+          {/*Social links */}
+          <ul className="ul--social">
             <li className="li--social">
               <Link to={'https://github.com/Nicolas-alt'} target={'_bank'}>
                 <i className="i--social bx bxl-github"></i>

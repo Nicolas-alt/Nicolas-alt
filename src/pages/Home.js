@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-import Fade from 'react-reveal/Fade';
 import { Link } from 'react-router-dom';
 import Typed from 'typed.js';
 
@@ -24,7 +23,7 @@ const Home = () => {
   }, []);
 
   return (
-    <Fade bottom>
+    <>
       <CustomHelmet
         titlePage="Nicolas Jiménez"
         contentText="Nicolas Jiménez, desarrollador web Bogotá. Codifico ideas."
@@ -40,7 +39,7 @@ const Home = () => {
           <i className="bx bx-right-arrow-alt"></i>
         </Link>
       </section>
-    </Fade>
+    </>
   );
 };
 

@@ -1,115 +1,76 @@
 $fontIconSize: 2rem;
+i {
+  display: none;
+}
 
+ul {
+  list-style: none;
+  margin: 0;
+}
+
+.li--social {
+  i {
+    display: none;
+  }
+}
 .section--principal {
   height: 100vh;
   width: 100%;
   display: flex;
+}
 
-  .header--menu--close {
-    height: 100%;
-    width: 50px;
-
-    .i--menu {
-      margin: 0 auto;
-      margin-top: 20px;
-      font-size: $fontIconSize;
-
-      &:hover {
-        cursor: pointer;
-      }
-    }
-
-    nav {
-      height: 100%;
-      width: 100%;
-
-      ul {
-        height: 100%;
-        width: 100%;
-        margin: 0;
-        padding: 0;
-        list-style: none;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-      }
-      // Nav styles
-      .i--iconsNav,
-      .span--nav {
-        display: none;
-      }
-
-      .i--social {
-        color: black;
-        display: block;
-        font-size: $fontIconSize;
-        margin-bottom: 20px;
-      }
-    }
-  }
-
-  .header--menu--open {
-    @extend .header--menu--close;
-    background-color: red;
-    z-index: 5;
-    width: 200px;
-  }
-
-  .div--router {
-    height: 100%;
-    width: 100%;
-  }
+// Router components
+.div--router {
+  height: 100%;
+  width: 100%;
 }
 
 @media screen and (max-width: 900px) {
   .section--principal {
     flex-direction: column-reverse;
 
-    .header--menu--close {
-      height: 40px;
+    .ul--links {
+      height: 50px;
       width: 100%;
       position: relative;
       z-index: 10;
-      background-color: yellow;
-      border-top-left-radius: 80px;
-      border-top-right-radius: 80px;
+      border-top: 1px solid yellow;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      background-color: black;
+      padding: 0 20px;
 
-      .i--menu {
-        display: none;
-      }
-      .red {
-        background-color: red;
-        .i--iconsNav {
-          color: red;
-        }
-      }
-      nav {
-        height: 100%;
-        width: 100%;
-
-        ul {
-          height: 100%;
-          width: 100%;
-          margin: 0;
-          padding: 0;
-          display: flex;
-          flex-direction: row;
+      li {
+        i {
+          font-size: 1.5rem;
+          color: white;
         }
 
-        .i--social {
+        span {
           display: none;
         }
-
-        .i--iconsNav {
-          display: block;
-        }
       }
-    }
-  }
-}
 
-@media screen and (max-width: 750px) {
-  .section--principal {
+      .i--menu {
+        display: block;
+      }
+    } // ul links
+  }
+
+  .link-active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 50px;
+    width: 50px;
+    bottom: 20px;
+    background-color: yellow;
+
+    .link-active > span {
+      display: block;
+      color: white;
+    }
   }
 }
