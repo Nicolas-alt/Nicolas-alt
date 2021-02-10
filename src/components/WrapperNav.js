@@ -48,6 +48,35 @@ const WrapperNav = () => {
                   <span className="span--nav">Experience</span>
                 </NavLink>
               </li>
+
+              <div className="div--details">
+                <ul id="ul--details">
+                  <div>
+                    <li>
+                      <a href='https://github.com/Nicolas-alt' target='_blank'>
+                        <i className="i--social bx bxl-github"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.linkedin.com/in/nicolas-jimenez-b20660184/"
+                        target="_blank"
+                      >
+                        <i className="i--social bx bxl-linkedin"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://twitter.com/Nicolas35103573" target="_blank">
+                        <i className="i--social bx bxl-twitter"></i>
+                      </a>
+                    </li>
+                  </div>
+                  <hr />
+                  <li>
+                    Created by Nicolas
+                  </li>
+                </ul>
+              </div>
             </ul>
 
             {/*Social links */}

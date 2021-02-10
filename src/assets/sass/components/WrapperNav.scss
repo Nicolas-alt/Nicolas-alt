@@ -40,19 +40,22 @@ nav {
 
 .header-open {
   background-color: rgba(255, 255, 255, 0.1);
-  width: 150px;
+  width: 25vw;
   height: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-end;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
   backdrop-filter: blur(3px);
-  -webkit-box-shadow: 4px 0px 13px 8px rgba(0,0,0,0.14);
--moz-box-shadow: 4px 0px 13px 8px rgba(0,0,0,0.14);
-box-shadow: 4px 0px 13px 8px rgba(0,0,0,0.14);
+  -webkit-box-shadow: 4px 0px 13px 8px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 4px 0px 13px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 4px 0px 13px 8px rgba(0, 0, 0, 0.1);
 
+  // Trienagle close menú
   .i--menu {
     margin: 20px 0;
-    margin-left: 50px;
+    margin-right: 40px;
     color: white;
     font-size: 2em;
     transform: rotate(180deg);
@@ -69,6 +72,7 @@ box-shadow: 4px 0px 13px 8px rgba(0,0,0,0.14);
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  align-items: center;
   padding: 0;
   padding-top: 10%;
   width: 100%;
@@ -76,14 +80,73 @@ box-shadow: 4px 0px 13px 8px rgba(0,0,0,0.14);
 
   li {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     margin: 20px 0;
+    padding-left: 25%;
+    width: 100%;
+
+    a {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  .i--iconsNav {
+    margin-right: 10px;
   }
 
   .i--iconsNav,
   .span--nav {
     font-size: 1.5em;
     color: white;
+  }
+
+  
+  // "footer ul"
+  .div--details {
+    height: 100%;
+    width: 100%;
+  }
+
+   #ul--details {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+    margin: 0;
+    padding: 0;
+    height: 90%;
+    width: 100%;
+
+    div {
+      display: flex;
+      justify-content: space-around;
+      align-items: flex-end;
+      height: 90%;
+
+      li {
+        margin: 0;
+        width: 0;
+      }
+
+      a {
+        i {
+          color: white;
+          font-size: 2em;
+        }
+      }
+    }
+
+    hr {
+      width: 80%;
+    }
+    // li "created by"
+    li {
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      margin-top: 1px;
+      color: white;
+    }
   }
 }
 
@@ -97,6 +160,7 @@ box-shadow: 4px 0px 13px 8px rgba(0,0,0,0.14);
   display: none;
 }
 
+// icons media
 .ul--social--open {
   display: block;
   width: 100%;
@@ -121,6 +185,7 @@ box-shadow: 4px 0px 13px 8px rgba(0,0,0,0.14);
   }
 }
 
+// icons media
 .li--social {
   i {
     display: none;
@@ -193,10 +258,14 @@ box-shadow: 4px 0px 13px 8px rgba(0,0,0,0.14);
       }
     }
 
+    div #ul--details {
+      display: none;
+    }
+
     .i--iconsNav,
     .span--nav {
       font-size: 1.5em;
-      color: white; 
+      color: white;
     }
 
     .link-active {
