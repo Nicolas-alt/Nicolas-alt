@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import Routes from '../routes/Routes';
 
 import '../assets/sass/components/WrapperNav.scss';
@@ -12,7 +12,7 @@ const WrapperNav = () => {
     setMenu(!menu);
   };
 
-  useEffect(() => {
+  useEffect((...menu) => {
     window.addEventListener('resize', (e) => {
       const { innerWidth } = e.target
       setWidth(innerWidth)
@@ -53,7 +53,7 @@ const WrapperNav = () => {
                 <ul id="ul--details">
                   <div>
                     <li>
-                      <a href='https://github.com/Nicolas-alt' target='_blank'>
+                      <a href='https://github.com/Nicolas-alt' target='_blank' rel="noreferrer">
                         <i className="i--social bx bxl-github"></i>
                       </a>
                     </li>
@@ -61,12 +61,14 @@ const WrapperNav = () => {
                       <a
                         href="https://www.linkedin.com/in/nicolas-jimenez-b20660184/"
                         target="_blank"
+                        rel="noreferrer"
                       >
                         <i className="i--social bx bxl-linkedin"></i>
                       </a>
                     </li>
                     <li>
-                      <a href="https://twitter.com/Nicolas35103573" target="_blank">
+                      <a href="https://twitter.com/Nicolas35103573" target="_blank"
+                        rel="noreferrer">
                         <i className="i--social bx bxl-twitter"></i>
                       </a>
                     </li>
@@ -82,7 +84,8 @@ const WrapperNav = () => {
             {/*Social links */}
             <ul className={menu ? "ul--social--close" : 'ul--social--open'}>
               <li className="li--social">
-                <a href='https://github.com/Nicolas-alt' target='_blank'>
+                <a href='https://github.com/Nicolas-alt' target='_blank'
+                  rel="noreferrer">
                   <i className="i--social bx bxl-github"></i>
                 </a>
               </li>
@@ -91,13 +94,15 @@ const WrapperNav = () => {
                 <a
                   href="https://www.linkedin.com/in/nicolas-jimenez-b20660184/"
                   target="_blank"
+                  rel="noreferrer"
                 >
                   <i className="i--social bx bxl-linkedin"></i>
                 </a>
               </li>
 
               <li className="li--social">
-                <a href="https://twitter.com/Nicolas35103573" target="_blank">
+                <a href="https://twitter.com/Nicolas35103573" target="_blank"
+                  rel="noreferrer">
                   <i className="i--social bx bxl-twitter"></i>
                 </a>
               </li>
