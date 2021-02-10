@@ -105,7 +105,7 @@ const WrapperNav = () => {
           </nav>
         </header>
       </div>
-      <div className="div--router">
+      <div className="div--router" onClick={ menu ? handleToggleMenu : undefined}>
         <Routes />
       </div>
     </section>
