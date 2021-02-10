@@ -5,7 +5,7 @@ import url from '../assets/img/lg.png'
 const ProjectCard = ({ title }) => {
   return (
     <div className="div-project-card">
-      <img src={url} />
+      <img src={url} alt="project" />
       <h3>LogBook</h3>
       <div className="div-buttons">
         <a href="/" className="button-code">
