@@ -1,42 +1,75 @@
-.a--card {
-  background-image: url('../../img/rick.png');
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  margin: 20px;
-  height: 200px;
-  width: 200px;
+.div-project-card {
+  border: 1px solid white;
+  max-width: 500px;
+  max-height: 500px;
+  min-width: 250px;
+  min-height: 250px;
+  height: 300px;
+  width: 400px;
+  margin: 10px;
+  border-radius: 10px;
 
-  div {
-    display: none;
-  }
-  &:hover {
-    opacity: 0.3;
-    -webkit-box-shadow: 6px 4px 12px -2px rgba(0, 0, 0, 0.2);
-    -moz-box-shadow: 6px 4px 12px -2px rgba(0, 0, 0, 0.2);
-    box-shadow: 6px 4px 12px -2px rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
-    border-top: 3px solid #00e3fe;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    transition: opacity 0.3s ease;
-  }
-
-  &:hover div {
-    height: 50%;
+  img {
     width: 100%;
-    transition: height 0.3s ease;
-    font-weight: 100;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    color: black;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
 
-    p {
-      margin-bottom: 10px;
-      font-weight: 400;
+  h3 {
+    color: white;
+    font-weight: 400;
+    font-size: 1.5em;
+    text-align: center;
+  }
+
+  p {
+    color: white;
+  }
+}
+
+.div-buttons {
+  height: 40px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 1px 25%;
+
+  a {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    padding: 0 10px;
+
+    i {
+      color: white;
+      margin-right: 5px;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .div-project-card {
+    border: 1px solid white;
+    max-width: none;
+    max-height: 400px;
+    min-width: 250px;
+    width: 100%;
+  }
+
+  .div-buttons {
+    height: auto;
+    padding: 1px 10%;
+
+    a {
+      padding: 10px 20px;
+      i {
+        color: white;
+        margin-right: 5px;
+      }
     }
   }
 }

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
+import Fade from 'react-reveal/Fade';
 
 import CustomHelmet from '../components/CustomHelmet';
 import TitlePage from '../components/TitlePage';
@@ -9,11 +10,11 @@ import '../assets/sass/templates/About.scss';
 
 const About = () => {
   return (
-    <>
+    <Fade right>
       <CustomHelmet
         titlePage="About Me"
         contentText="Un vistazo acerca de mi vida profesional."
-        contentColor="#0545"
+        contentColor="#8a7dda"
       />
       <section className="section--about">
         <TitlePage title="Resume" />
@@ -29,14 +30,14 @@ const About = () => {
             Desarrollador front-end con React js, estudiante en una tecnología en desarrollo
             de software, apasionado por el desarrollo web. En sus ratos libres
             disfruta unas buenas partidas en Pubg. Me interesa el desarrollo de
-            aplicaciones híbridas con JavaScript y Flutter
+            aplicaciones híbridas con React-Native y Flutter.
           </p>
           <Link to="/experience">
             <i className="bx bx-right-arrow-alt"></i>
           </Link>
         </div>
       </section>
-    </>
+    </Fade>
   );
 };
 

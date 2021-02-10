@@ -1,17 +1,23 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-
 import '../assets/sass/components/ProjectCard.scss';
+import url from '../assets/img/lg.png'
 
-const ProjectCard = ({ data }) => {
-  const { name } = data;
+const ProjectCard = ({ title }) => {
   return (
-    <Link to={'/project/' + name} className="a--card">
-      <div>
-        <p>{name}</p>
-        <h3>Project 01</h3>
+    <div className="div-project-card">
+      <img src={url} />
+      <h3>LogBook</h3>
+      <div className="div-buttons">
+        <a href="/" className="button-code">
+          <i className='bx bxl-github'></i>
+          Ver código
+        </a>
+        <a href="/" className="button-view">
+          <i className='bx bx-plus'></i>
+          Ver
+          </a>
       </div>
-    </Link>
+    </div>
   );
 };
 

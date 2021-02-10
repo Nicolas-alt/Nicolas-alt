@@ -1,16 +1,19 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import Fade from 'react-reveal/Fade';
 import Typed from 'typed.js';
 
 import '../assets/sass/templates/Home.scss';
 import CustomHelmet from '../components/CustomHelmet';
+import { easter } from '../utils/easterEgg';
 
 const Home = () => {
   useEffect(() => {
+
+    easter()
     new Typed('#dev', {
       strings: [
         'Front dev 🎨',
-        'Desarrollador 🧩',
         'Entusiasta 🤩',
         'Developer 👾',
         'Web Developer 💻',
@@ -23,11 +26,11 @@ const Home = () => {
   }, []);
 
   return (
-    <>
+    <Fade top>
       <CustomHelmet
         titlePage="Nicolas Jiménez"
         contentText="Nicolas Jiménez, desarrollador web Bogotá. Codifico ideas."
-        contentColor="#fff"
+        contentColor="#8a7dda"
       />
       <section className="section--home">
         <p>Hi there, i am</p>
@@ -39,7 +42,7 @@ const Home = () => {
           <i className="bx bx-right-arrow-alt"></i>
         </Link>
       </section>
-    </>
+    </Fade>
   );
 };
 
