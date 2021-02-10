@@ -3,10 +3,10 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  padding-top: 10px;
+  padding-top: 20px;
 
   span {
-    background-color: black;
+    background-color: white;
     margin-left: 10px;
     margin-right: 10px;
     height: 2px;
@@ -15,7 +15,7 @@
 
   p {
     text-transform: uppercase;
-    color: lighten(#000000, 50%);
+    color: white;
     font-size: clamp(1rem, 7vw, 1.3rem);
   }
 }

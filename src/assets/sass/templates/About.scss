@@ -1,23 +1,27 @@
 .section--about {
-  height: 100%;
+  height: 100vh;
   width: 100%;
-  max-height: 100vh;
   display: grid;
-  grid-template-rows: 50px 30px 1fr;
+  grid-template-rows: 50px 50px 1fr;
   grid-template-columns: repeat(2, 1fr);
   grid-template-areas:
-    'header header'
-    'title title'
-    'img content';
-  padding-bottom: 40px;
+    "header header"
+    "title title"
+    "img content";
 
   h2 {
     font-weight: 400;
-    margin-left: 10px;
-    font-size: 2em;
+    margin-top: 10px;
+    font-size: 2.4em;
     grid-area: title;
+    color: white;
   }
-  img {
+
+  .about-img-movile {
+    display: none;
+  }
+
+  .about-img-desktop {
     grid-area: img;
     height: 100%;
     width: 100%;
@@ -34,6 +38,7 @@
       text-align: left;
       margin-top: 20px;
       margin-bottom: 40px;
+      color: white;
     }
 
     p {
@@ -41,23 +46,14 @@
       text-align: justify;
       width: 100%;
       font-size: 1.3rem;
+      color: white;
     }
   }
 
-  .div--tech {
-    width: 100%;
-    h4 {
-      font-weight: 200;
-      font-size: 1.4rem;
-      width: inherit;
-    }
-
-    div {
-      width: 100%;
-
-      i {
-        font-size: 3rem;
-      }
+  a {
+    i {
+      font-size: 3em;
+      color: white;
     }
   }
 }
@@ -66,19 +62,58 @@
   .section--about {
     overflow-y: auto;
     grid-template-columns: 1fr;
+    grid-template-rows: 50px 50px 0.5fr 1fr;
     grid-template-areas:
-      'header'
-      'title'
-      'img'
-      'content';
-    padding-top: 40px;
+      "header"
+      "title"
+      "img"
+      "content";
 
-    img {
-      min-height: 250px;
+    h2 {
+      text-align: center;
+      font-size: 2.2em;
+    }
+
+    .about-img-movile {
+      display: block;
+      height: 40vmin;
+      grid-area: img;
+      pointer-events: none;
+      margin: 0 auto;
+    }
+
+    .about-img-desktop {
+      display: none;
     }
 
     .div--text {
-      padding-top: 20px;
+      height: 80vh;
+      padding-top: 10px;
+
+      h3 {
+        font-size: 1.8em;
+        text-align: center;
+         margin-bottom: 20px;
+      }
     }
+
+    a {
+      display: none;
+    }
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .about-img-movile {
+    animation: about-img-movile-spin infinite 20s linear;
+  }
+}
+
+@keyframes about-img-movile-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
   }
 }

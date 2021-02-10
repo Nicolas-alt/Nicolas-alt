@@ -18,9 +18,6 @@ export const Experience = () => {
         <TitlePage title="TAKE A LOOK AT" />
         <h2>My Projects</h2>
         <div className="div--projects">
-          {data.map((data) => (
-            <ProjectCard data={data} />
-          ))}
         </div>
       </section>
     </>
