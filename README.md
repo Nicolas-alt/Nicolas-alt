@@ -1,8 +1,10 @@
 <div align="center">
-Hi there! 
+<h2> Hi there! 
 <img src="./src/assets/icons/hi.gif" width="15">
 , I'm Nicolas Jiménez.
-A passionate frontend developer.
+A passionate frontend  developer. 
+<img src="./src/assets/icons/react.png" width="20">
+</h2>
 </div>
 <br />
 

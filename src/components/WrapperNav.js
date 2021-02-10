@@ -12,7 +12,6 @@ const WrapperNav = () => {
     setMenu(!menu);
   };
 
-
   useEffect(() => {
     window.addEventListener('resize', (e) => {
       const { innerWidth } = e.target
@@ -54,24 +53,24 @@ const WrapperNav = () => {
             {/*Social links */}
             <ul className={menu ? "ul--social--close" : 'ul--social--open'}>
               <li className="li--social">
-                <Link to={'https://github.com/Nicolas-alt'} target={'_bank'}>
+                <a href='https://github.com/Nicolas-alt' target='_blank'>
                   <i className="i--social bx bxl-github"></i>
-                </Link>
+                </a>
               </li>
 
               <li className="li--social">
-                <Link
-                  to="https://www.linkedin.com/in/nicolas-jimenez-b20660184/"
-                  target="_bank"
+                <a
+                  href="https://www.linkedin.com/in/nicolas-jimenez-b20660184/"
+                  target="_blank"
                 >
                   <i className="i--social bx bxl-linkedin"></i>
-                </Link>
+                </a>
               </li>
 
               <li className="li--social">
-                <Link to="https://twitter.com/Nicolas35103573" target="_blan">
+                <a href="https://twitter.com/Nicolas35103573" target="_blank">
                   <i className="i--social bx bxl-twitter"></i>
-                </Link>
+                </a>
               </li>
             </ul>
           </nav>
