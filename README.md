@@ -1,12 +1,17 @@
 <div align="center">
-    <h2> Hi there! 
-        <img src="./src/assets/icons/hi.gif" width="15">
+    <h1> Hi there! 
+        <img src="./src/assets/icons/hi.gif" width="15" />
         , I'm Nicolas Jiménez.
-        A passionate frontend  developer. 
-        <img src="./src/assets/icons/react.png" width="20">
-    </h2>
+        A passionate frontend  dev. 
+        <img src="./src/assets/icons/react.png" width="25" />
+    </h1>
 </div>
 <br />
+
+
+<div align="center">
+    <img src="./src/assets/icons/red.gif" width="180" />
+</div>
 
 <p align="center">
     <a href="https://github.com/anuraghazra/github-readme-stats" style="margin: 50px">
@@ -16,9 +21,7 @@
 
 <div align="center">
 
-<img src="./src/assets/icons/red.gif" style="width: 10px">
-
-#### 👨‍💻 All of my projects are available at: [https://nicolas-alt.vercel.app/](https://nicolas-alt.vercel.app/)
+## 👨‍💻 All of my projects are available at: [https://nicolas-alt.vercel.app/](https://nicolas-alt.vercel.app/)
 
 <hr />
 <br />
@@ -26,9 +29,9 @@
 <!-- Connect -->
 <h3 align="center">Get in touch with me:</h3>
     <a align="center" href="https://twitter.com/nicolas35103573" target="blank">
-        <img align="center" src="./src/assets/icons/twitter.png" alt="nicolas35103573" style="margin-right: 25px" />
+        <img align="center" src="./src/assets/icons/twitter.png" alt="nicolas35103573" />
     </a>
-      <a align="center" href="https://twitter.com/nicolas35103573" target="blank">
-        <img align="center" src="./src/assets/icons/linkedin.png" alt="nicolas35103573" />
+      <a align="center" href="https://www.linkedin.com/in/nicolas-jimenez-b20660184/" target="blank" >
+        <img align="center" src="./src/assets/icons/linkedin.png" alt="nicolas35103573" style="margin-right: 25px" />
     </a>
 </div>
