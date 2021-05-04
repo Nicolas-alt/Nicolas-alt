@@ -21,7 +21,7 @@
 
 <div align="center">
 
-## 👨‍💻 All of my projects are available at: [https://nicolas-alt.vercel.app/](https://nicolas-alt.vercel.app/)
+## 👨‍💻 All of my projects are available [here](https://nicolas-alt.github.io/portafolio-v2/)
 
 <hr />
 <br />
